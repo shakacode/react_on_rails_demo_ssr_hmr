@@ -76,6 +76,7 @@ module.exports = function(api) {
           async: false
         }
       ],
+      process.env.WEBPACK_DEV_SERVER && 'react-refresh/babel',
       isProductionEnv && [
         'babel-plugin-transform-react-remove-prop-types',
         {
