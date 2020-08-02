@@ -1,7 +1,13 @@
-import PropTypes from 'prop-types'
-import React, { useState } from 'react'
+import * as React from 'react'
+import { useState, FunctionComponent } from 'react'
 
-const HelloWorld = (props) => {
+export interface Props {
+  name: string
+}
+
+// Note,  you need to declare the type so that ReactOnRails.register has the
+// proper type.
+const HelloWorld: FunctionComponent<Props> = (props: Props) => {
   const [name, setName] = useState(props.name)
 
   return (
@@ -21,10 +27,6 @@ const HelloWorld = (props) => {
       </form>
     </div>
   )
-}
-
-HelloWorld.propTypes = {
-  name: PropTypes.string.isRequired // this is passed from the Rails view
 }
 
 export default HelloWorld

@@ -1,15 +1,20 @@
 {
   "dependencies": {
     "@babel/preset-react": "^7.10.4",
+    "@babel/preset-typescript": "^7.10.4",
     "@rails/webpacker": "5.1.1",
+    "@types/react": "^16.9.44",
+    "@types/react-dom": "^16.9.8",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-on-rails": "12.0.1"
+    "react-on-rails": "12.0.1",
+    "typescript": "^3.9.7"
   },
   "devDependencies": {
     "@pmmmwh/react-refresh-webpack-plugin": "^0.4.1",
+    "fork-ts-checker-webpack-plugin": "^5.0.13",
     "react-refresh": "^0.8.3",
     "webpack-dev-server": "^3.11.0"
   }
