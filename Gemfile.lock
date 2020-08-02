@@ -203,7 +203,7 @@ DEPENDENCIES
   listen (~> 3.2)
   puma (~> 4.1)
   rails (~> 6.0.3, >= 6.0.3.1)
-  react_on_rails (~> 12.0)
+  react_on_rails (= 12.0.1)
   selenium-webdriver
   spring
   spring-watcher-listen (~> 2.0.0)

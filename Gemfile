@@ -49,4 +49,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem "webpacker", "~> 5.1"
 
-gem "react_on_rails", "~> 12.0"
+gem "react_on_rails", "12.0.1"
