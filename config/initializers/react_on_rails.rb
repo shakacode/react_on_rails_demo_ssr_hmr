@@ -41,7 +41,5 @@ ReactOnRails.configure do |config|
   # different. You should have ONE server bundle which can create all of your server rendered
   # React components.
   #
-  config.server_bundle_js_file = "hello-world-bundle.js"
-
-  config.same_bundle_for_client_and_server = true
+  config.server_bundle_js_file = "server-bundle.js"
 end
