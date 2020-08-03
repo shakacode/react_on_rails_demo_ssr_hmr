@@ -42,4 +42,6 @@ ReactOnRails.configure do |config|
   # React components.
   #
   config.server_bundle_js_file = "hello-world-bundle.js"
+
+  config.same_bundle_for_client_and_server = true
 end
