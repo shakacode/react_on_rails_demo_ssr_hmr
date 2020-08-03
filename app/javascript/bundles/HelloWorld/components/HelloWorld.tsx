@@ -1,7 +1,11 @@
-import PropTypes from 'prop-types';
-import React, { useState } from 'react';
+import * as React from 'react';
+import { useState } from 'react';
 
-const HelloWorld = (props) => {
+export interface Props {
+  name: string;
+}
+
+const HelloWorld = (props: Props) => {
   const [name, setName] = useState(props.name);
 
   return (
@@ -16,10 +20,6 @@ const HelloWorld = (props) => {
       </form>
     </div>
   );
-};
-
-HelloWorld.propTypes = {
-  name: PropTypes.string.isRequired, // this is passed from the Rails view
 };
 
 export default HelloWorld;
