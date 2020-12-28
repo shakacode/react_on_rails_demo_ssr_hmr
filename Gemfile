@@ -47,8 +47,9 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-gem "webpacker", "~> 5.2"
+# gem "webpacker", "~> 6"
+gem "webpacker", github: "shakacode/webpacker", branch: "justin808/fix-debug-webpacker"
 
-gem "react_on_rails", "12.0.3"
+gem "react_on_rails", "12.0.4"
 
 gem 'mini_racer', platforms: :ruby
