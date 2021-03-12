@@ -1086,10 +1086,10 @@
     schema-utils "^2.6.5"
     source-map "^0.7.3"
 
-"@rails/webpacker@^6.0.0-beta.2":
-  version "6.0.0-beta.2"
-  resolved "https://registry.yarnpkg.com/@rails/webpacker/-/webpacker-6.0.0-beta.2.tgz#8b090b1d2fc39b677630b97758a225c97c9bddae"
-  integrity sha512-4y4PtrvDHfwF9z8LatwU58TmsJSfBaxR+3Vs95yOldoWURIOIOI/rXKnlisbJ/mVVsNceBy4an0FHInPDEjpbA==
+"@rails/webpacker@^6.0.0-beta.6":
+  version "6.0.0-beta.6"
+  resolved "https://registry.yarnpkg.com/@rails/webpacker/-/webpacker-6.0.0-beta.6.tgz#180d3297d466168b15a0bc089f5de8c4977a00c3"
+  integrity sha512-rM99yqoBwSZtH4KgWtG1mIZaNQFAPYR/eI+8/COXkbA0taEd0vmAZ70TkLT+gxFenrjLHW32v0/42HEKICzO/w==
   dependencies:
     "@babel/core" "^7.12.9"
     "@babel/plugin-proposal-class-properties" "^7.12.1"
