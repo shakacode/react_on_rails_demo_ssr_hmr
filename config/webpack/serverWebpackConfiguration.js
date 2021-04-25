@@ -46,7 +46,7 @@ const configureServer = () => {
     // If using the React on Rails Pro node server renderer, uncomment the next line
     // libraryTarget: 'commonjs2',
     path: config.outputPath,
-    publicPath: config.outputPath
+    publicPath: config.publicPath,
     // https://webpack.js.org/configuration/output/#outputglobalobject
   }
 
