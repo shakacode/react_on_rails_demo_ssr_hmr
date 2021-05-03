@@ -1,5 +1,5 @@
 # React on Rails Tutorial With SSR, HMR fast refresh, and TypeScript
-Each commit demonstrates a step in the [React on Rails Tutorial](https://github.com/shakacode/react_on_rails/blob/master/docs/tutorial.md).
+Each commit demonstrates a step in the [React on Rails Tutorial](https://github.com/shakacode/react_on_rails/blob/master/docs/basics/tutorial.md).
 
 Please ⭐️ this repo if you find this useful.
 
