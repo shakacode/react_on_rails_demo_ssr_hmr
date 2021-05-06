@@ -4,7 +4,7 @@ const { webpackConfig: baseClientWebpackConfig, merge } = require('@rails/webpac
 
 const commonOptions = {
   resolve: {
-      extensions: ['.ts', '.tsx']
+      extensions: ['.css', '.ts', '.tsx']
   }
 }
 

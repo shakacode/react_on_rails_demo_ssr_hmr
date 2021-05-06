@@ -1,5 +1,6 @@
 import * as React from 'react'
 import { useState, FunctionComponent } from 'react'
+// @ts-ignore
 import style from './HelloWorld.module.css'
 
 export interface Props {
@@ -10,13 +11,14 @@ export interface Props {
 // proper type.
 const HelloWorld: FunctionComponent<Props> = (props: Props) => {
   const [name, setName] = useState(props.name)
+  console.log(style)
 
   return (
     <div>
       <h3>Hello, {name}!</h3>
       <hr />
       <form>
-        <label style={style.bold} htmlFor="name">
+        <label className={style.bold} htmlFor="name">
           Say hello to:
           <input
             id="name"

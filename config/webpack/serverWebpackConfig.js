@@ -81,17 +81,20 @@ const configureServer = () => {
       });
       const cssLoader = rule.use.find((item) => {
         let testValue;
+
         if (typeof item === 'string') {
           testValue = item;
         } else if (typeof item.loader === 'string') {
           testValue = item.loader;
         }
-        return testValue === 'css-loader';
+
+        return testValue.includes('css-loader');
       });
-      if (cssLoader && cssLoader.options.modules) {
-        cssLoader.options.onlyLocals = true;
+      if (cssLoader && cssLoader.options) {
+        console.log(`css modules: ${JSON.stringify(cssLoader.options.modules)}`)
+        // cssLoader.options.onlyLocals = true;
         // when the cssLoader goes to 4.x:
-        // cssLoader.options.modules.exportOnlyLocals = true;
+        cssLoader.options.modules = { exportOnlyLocals: true };
       }
 
       // Skip writing image files during SSR by setting emitFile to false
