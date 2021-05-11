@@ -6,9 +6,12 @@ Please ⭐️ this repo if you find this useful.
 See the [commit history](https://github.com/shakacode/react_on_rails_tutorial_with_ssr_and_hmr_fast_refresh/commits/master).
 
 ## Key features
+1. rails/webpacker v6!
 1. Server-Side Rendering (SSR) of React using a separate server bundle.
-2. Webpack configuration for the server bundle is based on the rails/webpacker configuration for the client files.
-3. HMR is provided by [react-refresh-webpack-plugin](https://github.com/pmmmwh/react-refresh-webpack-plugin).
+1. Webpack configuration for the server bundle is based on the rails/webpacker configuration for the client files.
+1. HMR is provided by [react-refresh-webpack-plugin](https://github.com/pmmmwh/react-refresh-webpack-plugin).
+1. TypeScript
+1. CSS Modules 
 
 # Installation
 
@@ -57,6 +60,7 @@ foreman start -f Procfile.dev
    2. Change config/initializers/react_on_rails.rb to have the correct server bundle name
    3. Follow the flow from config/webpack/development.js to webpackConfig.js and consider
       uncommenting the debug line to see what happens when you run bin/webpack --debug
+1. [Upgrade to rails/webpacker v6](https://github.com/shakacode/react_on_rails_tutorial_with_ssr_and_hmr_fast_refresh/commit/04b3c7f9996bca469b9f5bd5fb27d20c016bfa8c)
       
 # Client only rendering versus Server-Side Rendering
 
@@ -79,6 +83,4 @@ Feel free to contact Justin Gordon, [justin@shakacode.com](mailto:justin@shakaco
 
 [Click to join **React + Rails Slack**](https://reactrails.slack.com/join/shared_invite/enQtNjY3NTczMjczNzYxLTlmYjdiZmY3MTVlMzU2YWE0OWM0MzNiZDI0MzdkZGFiZTFkYTFkOGVjODBmOWEyYWQ3MzA2NGE1YWJjNmVlMGE).
 
-
-
- 
+ShakaCode is hiring! Check out our [open positions](https://www.shakacode.com/career/). 
