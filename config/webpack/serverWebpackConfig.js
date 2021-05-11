@@ -91,9 +91,6 @@ const configureServer = () => {
         return testValue.includes('css-loader');
       });
       if (cssLoader && cssLoader.options) {
-        console.log(`css modules: ${JSON.stringify(cssLoader.options.modules)}`)
-        // cssLoader.options.onlyLocals = true;
-        // when the cssLoader goes to 4.x:
         cssLoader.options.modules = { exportOnlyLocals: true };
       }
 

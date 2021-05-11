@@ -11,7 +11,6 @@ export interface Props {
 // proper type.
 const HelloWorld: FunctionComponent<Props> = (props: Props) => {
   const [name, setName] = useState(props.name)
-  console.log(style)
 
   return (
     <div>
