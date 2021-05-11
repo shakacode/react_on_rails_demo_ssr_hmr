@@ -1,5 +1,7 @@
 import * as React from 'react'
 import { useState, FunctionComponent } from 'react'
+// @ts-ignore
+import style from './HelloWorld.module.css'
 
 export interface Props {
   name: string
@@ -15,7 +17,7 @@ const HelloWorld: FunctionComponent<Props> = (props: Props) => {
       <h3>Hello, {name}!</h3>
       <hr />
       <form>
-        <label htmlFor="name">
+        <label className={style.bold} htmlFor="name">
           Say hello to:
           <input
             id="name"

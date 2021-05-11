@@ -1,9 +1,12 @@
-const clientConfig = require('./clientWebpackConfiguration')
-const serverConfig = require('./serverWebpackConfiguration')
+const clientWebpackConfig = require('./clientWebpackConfig')
+const serverWebpackConfig = require('./serverWebpackConfig')
 
 const webpackConfig = (envSpecific) => {
+  const clientConfig = clientWebpackConfig()
+  const serverConfig = serverWebpackConfig()
+
   if (envSpecific) {
-    envSpecific()
+    envSpecific(clientConfig, serverConfig)
   }
 
   let result
@@ -11,16 +14,16 @@ const webpackConfig = (envSpecific) => {
   if (process.env.WEBPACK_DEV_SERVER || process.env.CLIENT_BUNDLE_ONLY) {
     // eslint-disable-next-line no-console
     console.log('[React on Rails] Creating only the client bundles.')
-    result = clientConfig()
+    result = clientConfig
   } else if (process.env.SERVER_BUNDLE_ONLY) {
     // eslint-disable-next-line no-console
     console.log('[React on Rails] Creating only the server bundle.')
-    result = serverConfig()
+    result = serverConfig
   } else {
     // default is the standard client and server build
     // eslint-disable-next-line no-console
     console.log('[React on Rails] Creating both client and server bundles.')
-    result = [clientConfig(), serverConfig()]
+    result = [clientConfig, serverConfig]
   }
 
   // To debug, uncomment next line and inspect "result"
