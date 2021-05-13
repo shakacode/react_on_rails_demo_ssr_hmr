@@ -2,10 +2,13 @@ import { StatusBar } from 'expo-status-bar'
 import * as React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
 
-export default function App() {
+export default function App(props) {
+  const { foo } = props
+
   return (
     <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
+      <Text>Welcome To Expo App</Text>
+      <Text>{foo}</Text>
       <StatusBar style="auto" />
     </View>
   )
