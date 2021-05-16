@@ -1,8 +1,8 @@
 import ReactOnRails from 'react-on-rails'
 
-import ExpoApp from '../bundles/expo-app/App'
+import ExpoAppWithoutNavigation from '../bundles/expo-without-navigation/App'
 
-// This is how react_on_rails can see the ExpoApp in the browser.
+// This is how react_on_rails can see the Expo Apps in the browser.
 ReactOnRails.register({
-  ExpoApp
+  ExpoAppWithoutNavigation
 })
