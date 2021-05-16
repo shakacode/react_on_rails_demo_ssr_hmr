@@ -1,4 +1,4 @@
-module.exports = function (api) {
+module.exports = function(api) {
   var validEnv = ['development', 'test', 'production']
   var currentEnv = api.env()
   var isDevelopmentEnv = api.env('development')
@@ -83,7 +83,8 @@ module.exports = function (api) {
         {
           removeImport: true
         }
-      ]
+      ],
+      ['react-native-web']
     ].filter(Boolean)
   }
 }
