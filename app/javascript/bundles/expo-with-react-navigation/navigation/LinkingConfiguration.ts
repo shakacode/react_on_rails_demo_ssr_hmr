@@ -11,6 +11,7 @@ export default {
   config: {
     screens: {
       Root: {
+        path: 'expo',
         screens: {
           TabOne: {
             screens: {
