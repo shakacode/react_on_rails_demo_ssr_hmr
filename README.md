@@ -47,7 +47,7 @@ foreman start -f Procfile.dev
 1. [Install webpacker React](https://github.com/shakacode/react_on_rails_tutorial_with_ssr_and_hmr_fast_refresh/commit/0e7cd331cbcf7bcd2295557d9a6a4c0cf196f161): `bundle exec rails webpacker:install:react`
 1. [Install React on Rails](https://github.com/shakacode/react_on_rails_tutorial_with_ssr_and_hmr_fast_refresh/commit/1ab76f5f59fb6ac0eaa18715d7e2e7a62dba2622): `rails generate react_on_rails:install`
 1. [Add HMR and Fast Refresh](https://github.com/shakacode/react_on_rails_tutorial_with_ssr_and_hmr_fast_refresh/commit/cb7037be084e49656b2d6a2412a75bc3db461075)
-   Leverages the [react-refresh-webpack-plugin](https://github.com/pmmmwh/react-refresh-webpack-plugin) to have [Fast Refresh](https://reactnative.dev/docs/fast-refresh) working with Webpack v4. After this change, you can
+   Leverages the [react-refresh-webpack-plugin](https://github.com/pmmmwh/react-refresh-webpack-plugin) to have [Fast Refresh](https://reactnative.dev/docs/fast-refresh) working with Webpack v4. Note, ensure HMR is enabled for the dev server: `hmr: true` in `webpacker.yml`.  After this change, you can:
    1. Run: `foreman start -f Procfile.dev-hmr`
    2. Edit a JSX file and save and see the React change and the component state was preserved.
 1. [rails/webpacker installs TypeScript into webpack](https://github.com/shakacode/react_on_rails_tutorial_with_ssr_and_hmr_fast_refresh/commit/b5b8697146f91b473cadb8d9b7664290160e71c3): `bundle exec rails webpacker:install:typescript`
