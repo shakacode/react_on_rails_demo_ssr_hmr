@@ -9,8 +9,6 @@ const WebWrapper = ({ children }: props) => (
   <View
     // @ts-ignore: These Style are web specific & are not in React native Prop Types
     style={{
-      height: Dimensions.get('window').height,
-      width: Dimensions.get('window').width,
       minWidth: 500,
       minHeight: 600
     }}

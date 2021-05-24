@@ -1,12 +1,7 @@
-<h1>This is a Demo of Server rendered Expo React Navigation App with React on Rails</h1>
+<% expo_navigation_app = react_component_hash("ExpoAppWithNavigation", props: @expo_props, prerender: true) %>
 
-<%= react_component("ExpoAppWithNavigation", props: @expo_props, prerender: false) %>
-
-<%# expo_navigation_app = react_component_hash("ExpoAppWithNavigation", props: @expo_props, prerender: true) %>
-
-<%#= expo_navigation_app['componentHtml'] %>
-
-
+<%= content_for :title, expo_navigation_app['title'] %>
+<%= expo_navigation_app['componentHtml'] %>
 
 
 

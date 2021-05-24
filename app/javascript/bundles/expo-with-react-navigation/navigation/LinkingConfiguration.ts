@@ -4,28 +4,33 @@
  * https://reactnavigation.org/docs/configuring-links
  */
 
-import * as Linking from 'expo-linking';
-
 export default {
-  prefixes: [Linking.makeUrl('/')],
+  prefixes: [],
   config: {
     screens: {
       Root: {
-        path: 'expo',
         screens: {
           TabOne: {
             screens: {
-              TabOneScreen: 'one',
-            },
+              TabOneScreen: {
+                path: '/expo/one',
+                exact: true
+              }
+            }
           },
           TabTwo: {
             screens: {
-              TabTwoScreen: 'two',
-            },
-          },
-        },
+              TabTwoScreen: {
+                path: '/expo/two',
+                exact: true
+              }
+            }
+          }
+        }
       },
-      NotFound: '*',
-    },
-  },
-};
+      NotFound: {
+        path: 'expo/*'
+      }
+    }
+  }
+}
