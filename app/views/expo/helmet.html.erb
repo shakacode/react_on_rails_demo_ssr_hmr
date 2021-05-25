@@ -1,0 +1,4 @@
+<% expo_navigation_app = react_component_hash("ExpoAppWithNavigation", props: @expo_props, prerender: true) %>
+
+<%= content_for :title, expo_navigation_app['title'] %>
+<%= expo_navigation_app['componentHtml'] %>

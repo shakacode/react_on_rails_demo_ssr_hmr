@@ -12,6 +12,10 @@ class ExpoController < ApplicationController
   end
 
   def navigation
-    @expo_props = { foo: "This is a prop sent from Rails Application" }
+    @expo_props = { foo: "This is a prop sent to Expo Navigation App" }
+  end
+
+  def helmet
+    @expo_props = { foo: "This is a prop sent to Expo Helmet App" }
   end
 end

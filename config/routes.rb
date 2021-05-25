@@ -3,5 +3,7 @@ Rails.application.routes.draw do
   get 'expo', to: 'expo#index'
   get 'expo/hello-world', to: 'expo#hello_world'
   get 'expo/*all' => 'expo#navigation'
+  get 'expo-helmet/*all' => 'expo#helmet'
+
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
