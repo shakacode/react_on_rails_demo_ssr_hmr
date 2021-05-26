@@ -13,7 +13,7 @@ export default {
           TabOne: {
             screens: {
               TabOneScreen: {
-                path: '/expo/one',
+                path: '/expo-helmet/one',
                 exact: true
               }
             }
@@ -21,7 +21,7 @@ export default {
           TabTwo: {
             screens: {
               TabTwoScreen: {
-                path: '/expo/two',
+                path: '/expo-helmet/two',
                 exact: true
               }
             }
@@ -29,7 +29,7 @@ export default {
         }
       },
       NotFound: {
-        path: 'expo/*'
+        path: 'expo-helmet/*'
       }
     }
   }

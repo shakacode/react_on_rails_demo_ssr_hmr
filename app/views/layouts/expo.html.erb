@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title><%= yield(:title) %></title>
   <%= csrf_meta_tags %>
   <%= javascript_pack_tag 'expo-app-bundle' %>
+  <%= yield(:meta) if content_for?(:meta) %>
+  <%= yield(:title) if content_for?(:title) %>
 </head>
 
 <body>
