@@ -12,7 +12,6 @@ export default function TabTwoScreen() {
     <View style={styles.container}>
       {isWeb && (
         <Helmet>
-          <title>Tab Two Title Using Helmet</title>
           <meta
             name="description"
             content={'Tab Two Description Using Helmet'}

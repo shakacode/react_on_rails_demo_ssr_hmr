@@ -3,18 +3,16 @@ import { renderToString } from 'react-dom/server'
 import ClientApp from './App'
 import { ServerContainer } from '@react-navigation/native'
 
-
 export default (
   props: any,
   railsContext: { pathname: string; search: string }
 ) => {
-  const ref = React.createRef()
-
   const componentHtml = renderToString(
     <ServerContainer
-      // @ts-ignore
-      ref={ref}
-      location={{ pathname: railsContext.pathname, search: railsContext.search || '' }}
+      location={{
+        pathname: railsContext.pathname,
+        search: railsContext.search || ''
+      }}
     >
       <ClientApp />
     </ServerContainer>
@@ -25,13 +23,9 @@ export default (
     ${componentHtml}
     </div>
 `
-  // @ts-ignore
-  const options = ref.current?.getCurrentOptions()
-
 
   const renderedHtml = {
-    componentHtml: document,
-    title: options?.headerTitle
+    componentHtml: document
   }
 
   // Note that this function returns an Object for server rendering.

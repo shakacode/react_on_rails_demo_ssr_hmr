@@ -41,7 +41,11 @@ function RootNavigator() {
   return (
     <Stack.Navigator screenOptions={{ headerShown: false }}>
       <Stack.Screen name="Root" component={BottomTabNavigator} />
-      <Stack.Screen name="NotFound" component={NotFoundScreen} />
+      <Stack.Screen
+        name="NotFound"
+        options={{ title: '404 Title From Options'}}
+        component={NotFoundScreen}
+      />
     </Stack.Navigator>
   )
 }

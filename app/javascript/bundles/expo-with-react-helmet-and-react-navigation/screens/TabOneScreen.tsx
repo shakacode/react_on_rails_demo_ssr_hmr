@@ -12,7 +12,6 @@ export default function TabOneScreen() {
     <View style={styles.container}>
       {isWeb && (
         <Helmet>
-          <title>Tab One Title Using Helmet</title>
           <meta
             name="description"
             content={'Tab One Description Using Helmet'}

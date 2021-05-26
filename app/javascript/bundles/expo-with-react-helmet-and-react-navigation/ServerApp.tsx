@@ -8,8 +8,12 @@ export default (
   props: any,
   railsContext: { pathname: string; search: string }
 ) => {
+  const ref = React.createRef()
+
   const componentHtml = renderToString(
     <ServerContainer
+      // @ts-ignore
+      ref={ref}
       location={{
         pathname: railsContext.pathname,
         search: railsContext.search || ''
@@ -25,12 +29,14 @@ export default (
     </div>
 `
 
+  // @ts-ignore
+  const options = ref.current?.getCurrentOptions()
   const helmet = Helmet.renderStatic()
 
   const renderedHtml = {
     componentHtml: document,
-    title: helmet.title.toString(),
-    meta: helmet.meta.toString()
+    meta: helmet.meta.toString(),
+    title: `<title>${options?.title}</title>`
   }
 
   // Note that this function returns an Object for server rendering.
