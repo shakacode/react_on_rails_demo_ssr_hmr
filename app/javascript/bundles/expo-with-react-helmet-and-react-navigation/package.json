@@ -25,14 +25,16 @@
     "expo-splash-screen": "~0.10.2",
     "expo-status-bar": "~1.0.4",
     "expo-web-browser": "~9.1.0",
+    "react-helmet": "^6.1.0",
     "react-native": "https://github.com/expo/react-native/archive/sdk-41.0.0.tar.gz",
-    "react-native-reanimated": "~2.1.0",
     "react-native-gesture-handler": "~1.10.2",
+    "react-native-reanimated": "~2.1.0",
     "react-native-safe-area-context": "3.2.0",
     "react-native-screens": "~3.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",
+    "@types/react-helmet": "^6.1.1",
     "@types/react-native": "~0.63.2",
     "jest-expo": "~41.0.0"
   },
