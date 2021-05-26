@@ -18,16 +18,15 @@ export default (
     </ServerContainer>
   )
 
-  const document = `
+  const componentWithWrapper = `
     <div id="root" style="display: flex; min-height: 100vh">
     ${componentHtml}
     </div>
 `
 
   const renderedHtml = {
-    componentHtml: document
+    componentHtml: componentWithWrapper
   }
 
-  // Note that this function returns an Object for server rendering.
   return { renderedHtml }
 }

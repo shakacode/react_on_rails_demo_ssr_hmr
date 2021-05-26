@@ -23,7 +23,7 @@ export default (
     </ServerContainer>
   )
 
-  const document = `
+  const componentWithWrapper = `
     <div id="root" style="display: flex; min-height: 100vh">
     ${componentHtml}
     </div>
@@ -34,11 +34,10 @@ export default (
   const helmet = Helmet.renderStatic()
 
   const renderedHtml = {
-    componentHtml: document,
+    componentHtml: componentWithWrapper,
     meta: helmet.meta.toString(),
     title: `<title>${options?.title}</title>`
   }
 
-  // Note that this function returns an Object for server rendering.
   return { renderedHtml }
 }
