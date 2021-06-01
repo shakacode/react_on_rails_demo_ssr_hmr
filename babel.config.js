@@ -1,6 +1,8 @@
 module.exports = function (api) {
   var validEnv = ['development', 'test', 'production']
   var currentEnv = api.env()
+  // https://babeljs.io/docs/en/config-files#apienv
+  // api.env is almost the NODE_ENV
   var isDevelopmentEnv = api.env('development')
   var isProductionEnv = api.env('production')
   var isTestEnv = api.env('test')
