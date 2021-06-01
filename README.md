@@ -38,7 +38,8 @@ foreman start -f Procfile.dev
 2. Set your preferred environment values and run
    `NODE_ENV=production RAILS_ENV=production bin/webpack --debug`
  
-## Notable Steps
+## Decriptive Commits
+_Note, this repo started with rails/webpacker v5 and an older version of React on Rails. These are for example purposes only. They are not a set of tutorial steps if you want to be on the current versions._
 1. [Rails new](https://github.com/shakacode/react_on_rails_tutorial_with_ssr_and_hmr_fast_refresh/commit/cba5b53644a540a6e0de94b35a2870023bacf619): `rails new --skip-sprockets -J --skip-turbolinks test-react-on-rails-v12-ssr-v2`
 1. [Add webpacker gem](https://github.com/shakacode/react_on_rails_tutorial_with_ssr_and_hmr_fast_refresh/commit/40897dd4fab5c1abd6eda763f8c17fd762c03ebe): `bundle add webpacker` 
 1. [Add React on Rails gem](https://github.com/shakacode/react_on_rails_tutorial_with_ssr_and_hmr_fast_refresh/commit/8038d7139f718dfee1366b97b1c30471b107db0b): `bundle add react_on_rails`. 
