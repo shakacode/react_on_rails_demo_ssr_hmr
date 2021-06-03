@@ -1,0 +1,11 @@
+<% expo_helmet_app = react_component_hash("ExpoAppWithHelmetAndNavigation", props: @expo_props, prerender: true) %>
+
+<% content_for :title do %>
+  <%= expo_helmet_app['title'] %>
+<% end %>
+
+<% content_for :meta do %>
+  <%= expo_helmet_app['meta'] %>
+<% end %>
+
+<%= expo_helmet_app['componentHtml'] %>

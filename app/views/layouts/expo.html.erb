@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <%= csrf_meta_tags %>
+  <%= javascript_pack_tag 'expo-app-bundle' %>
+  <%= yield(:meta) if content_for?(:meta) %>
+  <%= yield(:title) if content_for?(:title) %>
+</head>
+
+<body>
+<%= yield %>
+</body>
+</html>
