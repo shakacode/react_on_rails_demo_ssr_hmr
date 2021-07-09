@@ -19,17 +19,7 @@ module.exports = function (api) {
 
   return {
     presets: [
-      isTestEnv && [
-        '@babel/preset-env',
-        {
-          targets: {
-            node: 'current'
-          },
-          modules: 'commonjs'
-        },
-        '@babel/preset-react'
-      ],
-      (isProductionEnv || isDevelopmentEnv) && [
+      [
         '@babel/preset-env',
         {
           forceAllTransforms: true,
