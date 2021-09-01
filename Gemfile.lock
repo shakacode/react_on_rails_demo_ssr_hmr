@@ -1,8 +1,9 @@
 GIT
-  remote: https://github.com/rails/webpacker.git
-  revision: 032c2d11a3758035305fe34e6795ab133128ee32
+  remote: https://github.com/shakacode/webpacker.git
+  revision: e09b07e09fb6394c06aa0b2faf9c05dc668c6ff4
+  branch: justin808/skip-conenthash-when-not-production-only-webpack-dev-server
   specs:
-    webpacker (6.0.0.beta.7)
+    webpacker (6.0.0.rc.5)
       activesupport (>= 5.2)
       rack-proxy (>= 0.6.1)
       railties (>= 5.2)
