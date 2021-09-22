@@ -21,15 +21,19 @@ git clone git@github.com:shakacode/react_on_rails_tutorial_with_ssr_and_hmr_fast
 bundle
 yarn
 ```
+Use the provided Procfiles to run webpack and rails together, like `overmind start -f Procfile.dev`
+
+1. **`Procfile.dev`**: Uses the [webpack-dev-server](https://webpack.js.org/configuration/dev-server/). This will proxy asset requests to the webpack-dev-server except for a few files: the `manifest.json` and the `server-bundle.js` which are in the standard `public/webpack/development` folder.
+2. **`Procfile.dev-static`**: Uses the standard files in the `public/webpack/development` folder. Note, the standard webpack config in `/config/webpack` outputs an array which builds both the client and server bundles.
 
 ## Running with HMR
 ```
-foreman start -f Procfile.dev-hmr
+foreman start -f Procfile.dev
 ```
 
 ## Running without HMR, statically creating the bundles 
 ```
-foreman start -f Procfile.dev
+foreman start -f Procfile.dev-static
 ```                          
 
 ## Debugging the webpack setup
@@ -37,7 +41,7 @@ foreman start -f Procfile.dev
 1. Uncomment the debugger line at the end of file `config/webpack/webpackConfig.js`
 2. Set your preferred environment values and run
    `NODE_ENV=production RAILS_ENV=production bin/webpack --debug`
- 
+
 ## Decriptive Commits
 _Note, this repo started with rails/webpacker v5 and an older version of React on Rails. These are for example purposes only. They are not a set of tutorial steps if you want to be on the current versions._
 1. [Rails new](https://github.com/shakacode/react_on_rails_tutorial_with_ssr_and_hmr_fast_refresh/commit/cba5b53644a540a6e0de94b35a2870023bacf619): `rails new --skip-sprockets -J --skip-turbolinks test-react-on-rails-v12-ssr-v2`

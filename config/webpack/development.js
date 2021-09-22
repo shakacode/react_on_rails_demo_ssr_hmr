@@ -33,5 +33,4 @@ const developmentEnvOnly = (clientWebpackConfig, serverWebpackConfig) => {
     })
   )
 }
-
 module.exports = webpackConfig(developmentEnvOnly)
