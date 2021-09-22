@@ -1,6 +1,8 @@
 # React on Rails Tutorial With SSR, HMR fast refresh, and TypeScript
 Each commit demonstrates a step in the [React on Rails Tutorial](https://github.com/shakacode/react_on_rails/blob/master/docs/basics/tutorial.md).
 
+# UPDATE September 21, 2021: This repo is updated to the latest [rails/webpacker](https://github.com/rails/webpacker) master branch!
+
 Please ⭐️ this repo if you find this useful.
 
 See the [commit history](https://github.com/shakacode/react_on_rails_tutorial_with_ssr_and_hmr_fast_refresh/commits/master).
