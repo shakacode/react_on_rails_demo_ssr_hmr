@@ -38,6 +38,25 @@ foreman start -f Procfile.dev
 foreman start -f Procfile.dev-static
 ```                          
 
+## Testing Functionality of SSR and HMR
+1. Start app using either `Procfile.dev` or `Procfile.dev-static`.
+1. Visit page http://localhost:3000/hello_world.
+   1. Inspect the page for no errors and view the console. With HMR (non-static), you'll see a browser console message:` [webpack-dev-server] Hot Module Replacement enabled.`
+   2. Type into the input box and notice the label above change.
+1. Edit React file `app/javascript/bundles/HelloWorld/components/HelloWorld.tsx`, like changing some text in the React code, and save the file.
+   1. With HMR enabled, you'll see a message on the browser console and the page will update automatically. 
+   1. With static compilation, you'll need to refresh the page to see the update.
+1. Edit the CSS module file `app/javascript/bundles/HelloWorld/components/HelloWorld.module.css` and change the color. You will either see an instant upate to the webpage with HMR, or you will need to refresh the page.
+   1. With HMR enabled, you'll see a message on the browser console and the page will update automatically. You'll see browser console messages:
+      ```
+      [webpack-dev-server] App updated. Recompiling...
+      index.js:519 [webpack-dev-server] App hot update...
+      log.js:24 [HMR] Checking for updates on the server...
+      log.js:24 [HMR] Updated modules:
+      log.js:16 [HMR]  - ./app/javascript/bundles/HelloWorld/components/HelloWorld.module.css
+      log.js:24 [HMR] App is up to date.
+      ```
+       
 ## Debugging the webpack setup
 
 1. Uncomment the debugger line at the end of file `config/webpack/webpackConfig.js`
