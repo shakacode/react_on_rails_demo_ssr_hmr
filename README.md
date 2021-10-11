@@ -1,7 +1,7 @@
 # React on Rails Tutorial With SSR, HMR fast refresh, and TypeScript
 Each commit demonstrates a step in the [React on Rails Tutorial](https://github.com/shakacode/react_on_rails/blob/master/docs/basics/tutorial.md).
 
-# UPDATE September 21, 2021: This repo is updated to the latest [rails/webpacker](https://github.com/rails/webpacker) master branch!
+# UPDATE October 11, 2021: This repo is updated to the latest [rails/webpacker](https://github.com/rails/webpacker) master branch!
 
 Please ⭐️ this repo if you find this useful.
 
@@ -56,7 +56,11 @@ foreman start -f Procfile.dev-static
       log.js:16 [HMR]  - ./app/javascript/bundles/HelloWorld/components/HelloWorld.module.css
       log.js:24 [HMR] App is up to date.
       ```
-       
+
+## Production Build Test
+1. `RAILS_ENV=production rake assets:precompile`
+2. `rails s -e production`
+
 ## Debugging the webpack setup
 
 1. Uncomment the debugger line at the end of file `config/webpack/webpackConfig.js`
