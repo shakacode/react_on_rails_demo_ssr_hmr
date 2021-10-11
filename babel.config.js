@@ -7,13 +7,13 @@ module.exports = function (api) {
   var isProductionEnv = api.env('production')
   var isTestEnv = api.env('test')
 
-  if (!validEnv.includes(currentEnv)) {
+  if ( !validEnv.includes(currentEnv)) {
     throw new Error(
       'Please specify a valid `NODE_ENV` or ' +
-        '`BABEL_ENV` environment variables. Valid values are "development", ' +
-        '"test", and "production". Instead, received: ' +
-        JSON.stringify(currentEnv) +
-        '.'
+      '`BABEL_ENV` environment variables. Valid values are "development", ' +
+      '"test", and "production". Instead, received: ' +
+      JSON.stringify(currentEnv) +
+      '.'
     )
   }
 
@@ -46,7 +46,7 @@ module.exports = function (api) {
           useBuiltIns: true
         }
       ],
-      ['@babel/preset-typescript', { allExtensions: true, isTSX: true }]
+      ['@babel/preset-typescript', {allExtensions: true, isTSX: true}]
     ].filter(Boolean),
     plugins: [
       'babel-plugin-macros',
@@ -77,6 +77,18 @@ module.exports = function (api) {
         '@babel/plugin-transform-regenerator',
         {
           async: false
+        }
+      ],
+      [
+        "@babel/plugin-proposal-private-property-in-object",
+        {
+          "loose": true
+        }
+      ],
+      [
+        "@babel/plugin-proposal-private-methods",
+        {
+          loose: true
         }
       ],
       process.env.WEBPACK_SERVE && 'react-refresh/babel',
