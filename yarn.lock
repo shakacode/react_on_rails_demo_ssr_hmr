@@ -1224,8 +1224,9 @@
     schema-utils "^3.0.0"
     source-map "^0.7.3"
 
-"@rails/webpacker@file:.yalc/@rails/webpacker":
-  version "6.0.0-rc.6-4facecc7"
+"@rails/webpacker@shakacode/webpacker#justin808/add-fast-refresh-to-default-babel":
+  version "6.0.0-rc.6"
+  resolved "https://codeload.github.com/shakacode/webpacker/tar.gz/7dc5cf4da216e9b85a63b39922ac3677a88da920"
   dependencies:
     "@babel/core" "^7.15.5"
     "@babel/plugin-proposal-class-properties" "^7.14.5"
