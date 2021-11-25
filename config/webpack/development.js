@@ -4,7 +4,7 @@ const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin')
 const path = require('path')
 const { devServer, inliningCss } = require('@rails/webpacker')
 
-const webpackConfig = require('./webpackConfig')
+const webpackConfig = require('react-on-webpacker')
 
 const developmentEnvOnly = (clientWebpackConfig, serverWebpackConfig) => {
 
