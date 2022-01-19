@@ -1,6 +1,6 @@
 // Common configuration applying to client and server configuration
 
-const { webpackConfig: baseClientWebpackConfig, merge } = require('@rails/webpacker')
+const { webpackConfig: baseClientWebpackConfig, merge } = require('shakapacker')
 
 const commonOptions = {
   resolve: {
