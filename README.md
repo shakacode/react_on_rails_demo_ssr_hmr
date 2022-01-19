@@ -1,12 +1,7 @@
 # React on Rails Tutorial With SSR, HMR fast refresh, and TypeScript
 Each commit demonstrates a step in the [React on Rails Tutorial](https://github.com/shakacode/react_on_rails/blob/master/docs/basics/tutorial.md).
 
-**UPDATE November 11, 2021: This repo is updated to the latest [rails/webpacker](https://github.com/rails/webpacker) 6.0.0.rc.6 release!**
-
-# rails/webpacker v6 Upgrade Example
-## See the [updates changes needed to go from v5 to v6 of rails/webpacker](https://github.com/shakacode/react_on_rails_tutorial_with_ssr_and_hmr_fast_refresh/compare/webpacker-5.x...master)
-
-*Pending: Describe key changes*
+**UPDATE January 19, 2022: This repo is updated to the latest [shakapacker gem and package](https://github.com/shakacode/shakapacker) v6 release!**
 
 ---
 
@@ -15,7 +10,7 @@ Please ⭐️ this repo if you find this useful.
 See the [commit history](https://github.com/shakacode/react_on_rails_tutorial_with_ssr_and_hmr_fast_refresh/commits/master).
 
 ## Key features
-1. rails/webpacker v6!
+1. `shakpacker` v6! (See explanation of the switch at [rails/webpacker](https://github.com/rails/webpacker).
 1. Server-Side Rendering (SSR) of React using a separate server bundle.
 1. Webpack configuration for the server bundle is based on the rails/webpacker configuration for the client files.
 1. HMR is provided by [react-refresh-webpack-plugin](https://github.com/pmmmwh/react-refresh-webpack-plugin).
@@ -53,7 +48,7 @@ foreman start -f Procfile.dev-static
 1. Edit React file `app/javascript/bundles/HelloWorld/components/HelloWorld.tsx`, like changing some text in the React code, and save the file.
    1. With HMR enabled, you'll see a message on the browser console and the page will update automatically. 
    1. With static compilation, you'll need to refresh the page to see the update.
-1. Edit the CSS module file `app/javascript/bundles/HelloWorld/components/HelloWorld.module.css` and change the color. You will either see an instant upate to the webpage with HMR, or you will need to refresh the page.
+1. Edit the CSS module file `app/javascript/bundles/HelloWorld/components/HelloWorld.module.css` and change the color. You will either see an instant update to the webpage with HMR, or you will need to refresh the page.
    1. With HMR enabled, you'll see a message on the browser console and the page will update automatically. You'll see browser console messages:
       ```
       [webpack-dev-server] App updated. Recompiling...
@@ -74,7 +69,7 @@ foreman start -f Procfile.dev-static
 2. Set your preferred environment values and run
    `NODE_ENV=production RAILS_ENV=production bin/webpack --debug`
 
-## Decriptive Commits
+## Descriptive Commits
 _Note, this repo started with rails/webpacker v5 and an older version of React on Rails. These are for example purposes only. They are not a set of tutorial steps if you want to be on the current versions._
 1. [Rails new](https://github.com/shakacode/react_on_rails_tutorial_with_ssr_and_hmr_fast_refresh/commit/cba5b53644a540a6e0de94b35a2870023bacf619): `rails new --skip-sprockets -J --skip-turbolinks test-react-on-rails-v12-ssr-v2`
 1. [Add webpacker gem](https://github.com/shakacode/react_on_rails_tutorial_with_ssr_and_hmr_fast_refresh/commit/40897dd4fab5c1abd6eda763f8c17fd762c03ebe): `bundle add webpacker` 
