@@ -1,4 +1,8 @@
 {
+  "engines": {
+    "node": "^12.13.0 || ^14 || >=16",
+    "yarn": ">=1 <4"
+  },
   "dependencies": {
     "@babel/core": "^7.16.10",
     "@babel/plugin-transform-runtime": "^7.16.10",
