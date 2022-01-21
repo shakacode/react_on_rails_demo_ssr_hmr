@@ -4,11 +4,9 @@ const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin')
 const path = require('path')
 const { devServer, inliningCss } = require('shakapacker')
 
-const webpackConfig = require('./webpackConfig')
+const webpackConfig = require('./ServerClientOrBoth')
 
 const developmentEnvOnly = (clientWebpackConfig, serverWebpackConfig) => {
-
-  const isWebpackDevServer = process.env.WEBPACK_DEV_SERVER
 
   //plugins
   if (inliningCss ) {
