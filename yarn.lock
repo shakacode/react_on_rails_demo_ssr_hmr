@@ -1806,6 +1806,120 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@swc/core-darwin-arm64@npm:1.3.64":
+  version: 1.3.64
+  resolution: "@swc/core-darwin-arm64@npm:1.3.64"
+  conditions: os=darwin & cpu=arm64
+  languageName: node
+  linkType: hard
+
+"@swc/core-darwin-x64@npm:1.3.64":
+  version: 1.3.64
+  resolution: "@swc/core-darwin-x64@npm:1.3.64"
+  conditions: os=darwin & cpu=x64
+  languageName: node
+  linkType: hard
+
+"@swc/core-linux-arm-gnueabihf@npm:1.3.64":
+  version: 1.3.64
+  resolution: "@swc/core-linux-arm-gnueabihf@npm:1.3.64"
+  conditions: os=linux & cpu=arm
+  languageName: node
+  linkType: hard
+
+"@swc/core-linux-arm64-gnu@npm:1.3.64":
+  version: 1.3.64
+  resolution: "@swc/core-linux-arm64-gnu@npm:1.3.64"
+  conditions: os=linux & cpu=arm64 & libc=glibc
+  languageName: node
+  linkType: hard
+
+"@swc/core-linux-arm64-musl@npm:1.3.64":
+  version: 1.3.64
+  resolution: "@swc/core-linux-arm64-musl@npm:1.3.64"
+  conditions: os=linux & cpu=arm64 & libc=musl
+  languageName: node
+  linkType: hard
+
+"@swc/core-linux-x64-gnu@npm:1.3.64":
+  version: 1.3.64
+  resolution: "@swc/core-linux-x64-gnu@npm:1.3.64"
+  conditions: os=linux & cpu=x64 & libc=glibc
+  languageName: node
+  linkType: hard
+
+"@swc/core-linux-x64-musl@npm:1.3.64":
+  version: 1.3.64
+  resolution: "@swc/core-linux-x64-musl@npm:1.3.64"
+  conditions: os=linux & cpu=x64 & libc=musl
+  languageName: node
+  linkType: hard
+
+"@swc/core-win32-arm64-msvc@npm:1.3.64":
+  version: 1.3.64
+  resolution: "@swc/core-win32-arm64-msvc@npm:1.3.64"
+  conditions: os=win32 & cpu=arm64
+  languageName: node
+  linkType: hard
+
+"@swc/core-win32-ia32-msvc@npm:1.3.64":
+  version: 1.3.64
+  resolution: "@swc/core-win32-ia32-msvc@npm:1.3.64"
+  conditions: os=win32 & cpu=ia32
+  languageName: node
+  linkType: hard
+
+"@swc/core-win32-x64-msvc@npm:1.3.64":
+  version: 1.3.64
+  resolution: "@swc/core-win32-x64-msvc@npm:1.3.64"
+  conditions: os=win32 & cpu=x64
+  languageName: node
+  linkType: hard
+
+"@swc/core@npm:^1.2.133":
+  version: 1.3.64
+  resolution: "@swc/core@npm:1.3.64"
+  dependencies:
+    "@swc/core-darwin-arm64": 1.3.64
+    "@swc/core-darwin-x64": 1.3.64
+    "@swc/core-linux-arm-gnueabihf": 1.3.64
+    "@swc/core-linux-arm64-gnu": 1.3.64
+    "@swc/core-linux-arm64-musl": 1.3.64
+    "@swc/core-linux-x64-gnu": 1.3.64
+    "@swc/core-linux-x64-musl": 1.3.64
+    "@swc/core-win32-arm64-msvc": 1.3.64
+    "@swc/core-win32-ia32-msvc": 1.3.64
+    "@swc/core-win32-x64-msvc": 1.3.64
+  peerDependencies:
+    "@swc/helpers": ^0.5.0
+  dependenciesMeta:
+    "@swc/core-darwin-arm64":
+      optional: true
+    "@swc/core-darwin-x64":
+      optional: true
+    "@swc/core-linux-arm-gnueabihf":
+      optional: true
+    "@swc/core-linux-arm64-gnu":
+      optional: true
+    "@swc/core-linux-arm64-musl":
+      optional: true
+    "@swc/core-linux-x64-gnu":
+      optional: true
+    "@swc/core-linux-x64-musl":
+      optional: true
+    "@swc/core-win32-arm64-msvc":
+      optional: true
+    "@swc/core-win32-ia32-msvc":
+      optional: true
+    "@swc/core-win32-x64-msvc":
+      optional: true
+  peerDependenciesMeta:
+    "@swc/helpers":
+      optional: true
+  checksum: ea77168089a34dcec088ab81aef99301eba003b5ed3dca4039803050ba9344e754687f7d4fb4b3e40d22509658bdbdbac2f94f99c6f94051970566c857774371
+  languageName: node
+  linkType: hard
+
 "@tootallnate/once@npm:2":
   version: 2.0.0
   resolution: "@tootallnate/once@npm:2.0.0"
@@ -7372,6 +7486,7 @@ __metadata:
     "@babel/runtime": ^7.21.5
     "@mdx-js/loader": ^2.3.0
     "@pmmmwh/react-refresh-webpack-plugin": ^0.5.10
+    "@swc/core": ^1.2.133
     "@types/react": ^18.2.6
     "@types/react-dom": ^18.2.4
     babel-loader: ^9.1.2
@@ -7388,6 +7503,7 @@ __metadata:
     react-refresh: ^0.14.0
     shakapacker: 7.0.0-rc.0
     style-loader: ^3.3.2
+    swc-loader: ^0.1.15
     terser-webpack-plugin: ^5.3.8
     typescript: ^5.0.4
     webpack: ^5.82.0
@@ -8055,6 +8171,16 @@ __metadata:
   bin:
     svgo: bin/svgo
   checksum: 381ba14aa782e71ab7033227634a3041c11fa3e2769aeaf0df43a08a615de61925108e34f55af6e7c5146f4a3109e78deabb4fa9d687e36d45d1f848b4e23d17
+  languageName: node
+  linkType: hard
+
+"swc-loader@npm:^0.1.15":
+  version: 0.1.16
+  resolution: "swc-loader@npm:0.1.16"
+  peerDependencies:
+    "@swc/core": ^1.2.147
+    webpack: ">=2"
+  checksum: 168ddd62105a74884f8bc1dbecc913d8c542a55baeb484c22590dfe5f89f081dbdd4012ad8d04fb3b0c230729babee25b82a71208e573874b4156a074ab7d3d2
   languageName: node
   linkType: hard
 
