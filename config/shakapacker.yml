@@ -15,7 +15,7 @@ default: &default
   # Reload manifest.json on all requests so we reload latest compiled packs
   cache_manifest: false
 
-  babel_loader: swc
+  webpack_loader: swc
 
 development:
   <<: *default
