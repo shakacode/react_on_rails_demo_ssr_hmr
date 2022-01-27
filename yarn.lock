@@ -4716,7 +4716,7 @@ setprototypeof@1.1.1:
 
 shakapacker@tomdracz/shakapacker#swc-spike:
   version "6.0.2"
-  resolved "https://codeload.github.com/tomdracz/shakapacker/tar.gz/7ab6fb724a5efb22f03734ad8600668107d6011b"
+  resolved "https://codeload.github.com/tomdracz/shakapacker/tar.gz/be1282b7fa3ab0fab879bd34e2ba98b5e24c2c34"
   dependencies:
     glob "^7.2.0"
     js-yaml "^4.1.0"
