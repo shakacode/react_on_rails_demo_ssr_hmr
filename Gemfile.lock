@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/tomdracz/shakapacker.git
-  revision: be1282b7fa3ab0fab879bd34e2ba98b5e24c2c34
+  revision: 959ec566cf8c9d147f2884efb20547147c96c9ac
   branch: swc-spike
   specs:
     shakapacker (6.0.2)
