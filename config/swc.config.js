@@ -5,6 +5,8 @@ const customConfig = {
     jsc: {
       transform: {
         react: {
+          useBuiltins: true,
+          development: env.isDevelopment,
           refresh: env.isDevelopment && env.runningWebpackDevServer
         }
       }
