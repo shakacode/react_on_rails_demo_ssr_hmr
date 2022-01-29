@@ -67,7 +67,7 @@ foreman start -f Procfile.dev-static
 
 1. Uncomment the debugger line at the end of file `config/webpack/webpackConfig.js`
 2. Set your preferred environment values and run
-   `NODE_ENV=production RAILS_ENV=production bin/webpack --debug`
+   `NODE_ENV=production RAILS_ENV=production bin/webpacker --debug`
 
 ## Descriptive Commits
 _Note, this repo started with rails/webpacker v5 and an older version of React on Rails. These are for example purposes only. They are not a set of tutorial steps if you want to be on the current versions._
@@ -91,7 +91,7 @@ _Note, this repo started with rails/webpacker v5 and an older version of React o
    1. Turned back on hmr and inline in webpacker.yml to support HMR.
    2. Change config/initializers/react_on_rails.rb to have the correct server bundle name
    3. Follow the flow from config/webpack/development.js to webpackConfig.js and consider
-      uncommenting the debug line to see what happens when you run bin/webpack --debug
+      uncommenting the debug line to see what happens when you run bin/webpacker --debug
 1. [Upgrade to rails/webpacker v6](https://github.com/shakacode/react_on_rails_tutorial_with_ssr_and_hmr_fast_refresh/commit/04b3c7f9996bca469b9f5bd5fb27d20c016bfa8c)
       
 # Client only rendering versus Server-Side Rendering
