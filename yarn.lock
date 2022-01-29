@@ -4714,9 +4714,10 @@ setprototypeof@1.1.1:
   resolved "https://registry.yarnpkg.com/setprototypeof/-/setprototypeof-1.1.1.tgz#7e95acb24aa92f5885e0abef5ba131330d4ae683"
   integrity sha512-JvdAWfbXeIGaZ9cILp38HntZSFSo3mWg6xGcJJsd+d4aRMOqauag1C63dJfDw7OaMYwEbHMOxEZ1lqVRYP2OAw==
 
-shakapacker@tomdracz/shakapacker#swc-spike:
-  version "6.0.2"
-  resolved "https://codeload.github.com/tomdracz/shakapacker/tar.gz/959ec566cf8c9d147f2884efb20547147c96c9ac"
+shakapacker@6.1.0-beta.0:
+  version "6.1.0-beta.0"
+  resolved "https://registry.yarnpkg.com/shakapacker/-/shakapacker-6.1.0-beta.0.tgz#b185f4ff65bce0fd6f90ef85190a29bcedcdf5c6"
+  integrity sha512-SakBrvrL1x4Y/H1pc40P+rgQDIv54wnuGVflClHEIzCbPI6uQ7ehlgiropXjVkRX9495yCGGgqnXeEAihdJ4dg==
   dependencies:
     glob "^7.2.0"
     js-yaml "^4.1.0"

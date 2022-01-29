@@ -47,7 +47,7 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-gem "shakapacker", git: 'https://github.com/tomdracz/shakapacker.git', branch: 'swc-spike'
+gem "shakapacker", "6.1.0.beta.0"
 gem "react_on_rails", "12.2.0"
 
 gem 'mini_racer', platforms: :ruby
