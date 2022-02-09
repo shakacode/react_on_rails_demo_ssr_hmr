@@ -12,4 +12,13 @@ const envSpecificConfig = () => {
   }
 }
 
-module.exports = envSpecificConfig()
+const webpackConfiguration = envSpecificConfig()
+
+// To debug the webpack configuration
+// 1. Uncomment debugger line below
+// 2. Run `bin/webpacker --debug-webpacker`
+// 3. Examine the webpackConfiguration variable
+// 4. Consider adding a 'debugger` line to the beginning of this file.
+// debugger
+
+module.exports = webpackConfiguration

@@ -1,11 +1,11 @@
-# React on Rails Tutorial With SSR, HMR fast refresh, and TypeScript
+# React on Rails Demo With SSR, HMR fast refresh, and TypeScript
 Each commit demonstrates a step in the [React on Rails Tutorial](https://github.com/shakacode/react_on_rails/blob/master/docs/basics/tutorial.md).
 
-**UPDATE January 19, 2022: This repo is updated to the latest [shakapacker gem and package](https://github.com/shakacode/shakapacker) v6 release!**
+**UPDATE February 9, 2022: This repo is updated to the latest [shakapacker gem and package](https://github.com/shakacode/shakapacker) v6.1 release and React on Rails v13!**
 
 ---
 
-Please ⭐️ this repo if you find this useful.
+_Please ⭐️ this repo if you find this useful._
 
 See the [commit history](https://github.com/shakacode/react_on_rails_tutorial_with_ssr_and_hmr_fast_refresh/commits/master).
 
@@ -59,15 +59,15 @@ foreman start -f Procfile.dev-static
       log.js:24 [HMR] App is up to date.
       ```
 
-## Production Build Test
+## Checking the production build
 1. `RAILS_ENV=production rake assets:precompile`
 2. `rails s -e production`
 
 ## Debugging the webpack setup
 
-1. Uncomment the debugger line at the end of file `config/webpack/webpackConfig.js`
+1. Uncomment the debugger line at the end of file `config/webpack/webpack.config.js`
 2. Set your preferred environment values and run
-   `NODE_ENV=production RAILS_ENV=production bin/webpack --debug`
+   `NODE_ENV=production RAILS_ENV=production bin/webpacker --debug-webpacker`
 
 ## Descriptive Commits
 _Note, this repo started with rails/webpacker v5 and an older version of React on Rails. These are for example purposes only. They are not a set of tutorial steps if you want to be on the current versions._
@@ -91,7 +91,7 @@ _Note, this repo started with rails/webpacker v5 and an older version of React o
    1. Turned back on hmr and inline in webpacker.yml to support HMR.
    2. Change config/initializers/react_on_rails.rb to have the correct server bundle name
    3. Follow the flow from config/webpack/development.js to webpackConfig.js and consider
-      uncommenting the debug line to see what happens when you run bin/webpack --debug
+      uncommenting the debug line to see what happens when you run bin/webpacker --debug
 1. [Upgrade to rails/webpacker v6](https://github.com/shakacode/react_on_rails_tutorial_with_ssr_and_hmr_fast_refresh/commit/04b3c7f9996bca469b9f5bd5fb27d20c016bfa8c)
       
 # Client only rendering versus Server-Side Rendering
