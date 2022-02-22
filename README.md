@@ -1,5 +1,5 @@
 # React on Rails Demo With SSR, HMR fast refresh, and TypeScript
-Each commit demonstrates a step in the [React on Rails Tutorial](https://github.com/shakacode/react_on_rails/blob/master/docs/basics/tutorial.md).
+Each commit demonstrates a step in the [React on Rails Tutorial](https://github.com/shakacode/react_on_rails/blob/master/docs/guides/tutorial.md).
 
 **UPDATE February 9, 2022: This repo is updated to the latest [shakapacker gem and package](https://github.com/shakacode/shakapacker) v6.1 release and React on Rails v13!**
 
