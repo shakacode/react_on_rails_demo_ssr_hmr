@@ -21,7 +21,7 @@ See the [commit history](https://github.com/shakacode/react_on_rails_tutorial_wi
 
 ## Setup
 ```bash              
-git clone git@github.com:shakacode/react_on_rails_tutorial_with_ssr_and_hmr_fast_refresh.git
+git clone git@github.com:shakacode/react_on_rails_demo_ssr_hmr.git
 bundle
 yarn
 ```
