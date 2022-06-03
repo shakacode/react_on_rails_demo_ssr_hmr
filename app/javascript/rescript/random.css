@@ -1,0 +1,19 @@
+.aboutSectionHeadContainer {
+  .subtitle {
+    max-width: 900px;
+    margin: 0 auto;
+    font-size: 18px;
+    color: $gray-text;
+    line-height: 25px;
+    text-align: center;
+  }
+
+  h2 {
+    color: $black;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 40px;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+}

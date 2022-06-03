@@ -36,8 +36,17 @@
   },
   "devDependencies": {
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.1",
+    "@rescript/react": "0.10.3",
     "fork-ts-checker-webpack-plugin": "^6.0.1",
     "react-refresh": "^0.9.0",
+    "rescript": "9.1.2",
+    "rescript-classnames": "6.0.0",
+    "rescript-debounce-react": "1.0.0",
+    "rescript-logger": "2.0.2",
+    "rescript-react-update": "3.0.2",
     "webpack-dev-server": "^4.7.3"
+  },
+  "scripts": {
+    "res:watch": "rescript build -w"
   }
 }

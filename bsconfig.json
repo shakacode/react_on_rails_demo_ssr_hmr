@@ -1,0 +1,34 @@
+{
+  "name": "quick-search-rescript",
+  "sources": [
+    {
+      "dir": "src",
+      "subdirs": true
+    }
+  ],
+  "bs-dependencies": [
+    "@rescript/react",
+    "rescript-react-update",
+    "rescript-classnames",
+    "rescript-debounce-react",
+    "rescript-logger",
+    "bs-webapi"
+  ],
+  "reason": {
+    "react-jsx": 3
+  },
+  "package-specs": [
+    {
+      "module": "es6",
+      "in-source": true
+    }
+  ],
+  "suffix": ".bs.js",
+  "bsc-flags": [
+    "-open Belt",
+    "-open Cx"
+  ],
+  "ppx-flags": [
+    "rescript-logger/ppx"
+  ]
+}

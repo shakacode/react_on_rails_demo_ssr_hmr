@@ -1221,6 +1221,11 @@
     schema-utils "^3.0.0"
     source-map "^0.7.3"
 
+"@rescript/react@0.10.3":
+  version "0.10.3"
+  resolved "https://registry.yarnpkg.com/@rescript/react/-/react-0.10.3.tgz#a2a8bed6b017940ec26c2154764b350f50348889"
+  integrity sha512-Lf9rzrR3bQPKJjOK3PBRa/B3xrJ7CqQ1HYr9VHPVxJidarIJJFZBhj0Dg1uZURX+Wg/xiP0PHFxXmdj2bK8Vxw==
+
 "@trysound/sax@0.1.1":
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/@trysound/sax/-/sax-0.1.1.tgz#3348564048e7a2d7398c935d466c0414ebb6a669"
@@ -4389,6 +4394,38 @@ requires-port@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/requires-port/-/requires-port-1.0.0.tgz#925d2601d39ac485e091cf0da5c6e694dc3dcaff"
   integrity sha1-kl0mAdOaxIXgkc8NpcbmlNw9yv8=
+
+rescript-classnames@6.0.0:
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/rescript-classnames/-/rescript-classnames-6.0.0.tgz#e833d9fc88e0e494c2ef39862721a80ab75fae32"
+  integrity sha512-hfOffijzIPnULtRZW3Kf0DCfCaw9lhGaMxf81WYlREieyBS2KNMcdI/8g5uSXFj0j4Ci21xkf70EFCKjuCTqpw==
+
+rescript-debounce-react@1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/rescript-debounce-react/-/rescript-debounce-react-1.0.0.tgz#8dd45967b818745dcb840439fd07bee10d06afde"
+  integrity sha512-WUgn8qGxWDXUHgOR4dDwI+h+FCWKdmZTBwCznvxTq/GiJZcusMr3fenazKiGIKzmxTUnnCCR2vcv43lq8YxZYA==
+  dependencies:
+    rescript-debounce "^1.0.0"
+
+rescript-debounce@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/rescript-debounce/-/rescript-debounce-1.0.0.tgz#943ba92f4f8560b6dba387f0f2614db87ae47eb1"
+  integrity sha512-vb1UlJvReXl9+p6TubaoEF06VBfAXdw+GPtDOPflce2IrqwCgwBVRn6mvImNFktPvyYvvDFDi36lihDamAM48w==
+
+rescript-logger@2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/rescript-logger/-/rescript-logger-2.0.2.tgz#fdcd564f0c04310cb673f475d501072d371bdeed"
+  integrity sha512-jbml41IgTyuiA7jnEYUqFeAKWnXAnlg5INCOpRPvhu99cLKFyFLl2B4GO04jznEDOgcpisJmwjm4WhfwhZETsQ==
+
+rescript-react-update@3.0.2:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/rescript-react-update/-/rescript-react-update-3.0.2.tgz#8efece4c578110a35fdb1389d890a186dcdf03c6"
+  integrity sha512-oOOaeWma6XEhfZwlB/hB6u+UfYtuHjWS4RpoBeE8NbPX60GYLx5BLoVjEqLKoqXFPJv/2ZgghOKBn2LZo0VaJg==
+
+rescript@9.1.2:
+  version "9.1.2"
+  resolved "https://registry.yarnpkg.com/rescript/-/rescript-9.1.2.tgz#a81f8a735f1a7006233bfc72eb081ca7182a0d79"
+  integrity sha512-4wHvTDv3nyYnAPJHcg1RGG8z7u3HDiBf6RN3P/dITDv859Qo35aKOzJWQtfBzbAs0EKNafLqei3TnUqiAv6BwQ==
 
 resolve-cwd@^3.0.0:
   version "3.0.0"
