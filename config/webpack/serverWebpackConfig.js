@@ -100,10 +100,6 @@ const configureServer = () => {
     }
   });
 
-  // TODO: DELETE NEXT 2 LINES
-  // Critical due to https://github.com/rails/webpacker/pull/2644
-  // delete serverWebpackConfig.devServer
-
   // eval works well for the SSR bundle because it's the fastest and shows
   // lines in the server bundle which is good for debugging SSR
   // The default of cheap-module-source-map is slow and provides poor info.
