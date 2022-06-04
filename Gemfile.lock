@@ -157,7 +157,7 @@ GEM
       childprocess (>= 0.5, < 4.0)
       rubyzip (>= 1.2.2)
     semantic_range (3.0.0)
-    shakapacker (6.1.1)
+    shakapacker (6.4.0)
       activesupport (>= 5.2)
       rack-proxy (>= 0.6.1)
       railties (>= 5.2)
@@ -208,7 +208,7 @@ DEPENDENCIES
   rails (~> 6.0.3, >= 6.0.3.1)
   react_on_rails (= 13.0.0)
   selenium-webdriver
-  shakapacker (= 6.1.1)
+  shakapacker (= 6.4.0)
   spring
   spring-watcher-listen (~> 2.0.0)
   sqlite3 (~> 1.4)
