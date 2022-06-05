@@ -1824,11 +1824,6 @@ babel-plugin-polyfill-regenerator@^0.3.0:
   dependencies:
     "@babel/helper-define-polyfill-provider" "^0.3.1"
 
-babel-plugin-transform-react-remove-prop-types@^0.4.24:
-  version "0.4.24"
-  resolved "https://registry.yarnpkg.com/babel-plugin-transform-react-remove-prop-types/-/babel-plugin-transform-react-remove-prop-types-0.4.24.tgz#f2edaf9b4c6a5fbe5c1d678bfb531078c1555f3a"
-  integrity sha512-eqj0hVcJUR57/Ug2zE1Yswsw4LhuqqHhD+8v120T1cl3kjg76QwtyBrdIk4WVwK+lAhBJVYCd/v+4nc4y+8JsA==
-
 bail@^2.0.0:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/bail/-/bail-2.0.2.tgz#d26f5cd8fe5d6f832a31517b9f7c356040ba6d5d"
@@ -3583,7 +3578,7 @@ longest-streak@^3.0.0:
   resolved "https://registry.yarnpkg.com/longest-streak/-/longest-streak-3.0.1.tgz#c97315b7afa0e7d9525db9a5a2953651432bdc5d"
   integrity sha512-cHlYSUpL2s7Fb3394mYxwTYj8niTaNHUCLr0qdiCXQfSjfuA7CKofpX2uSwEfFDQ0EB7JcnMnm+GjbqqoinYYg==
 
-loose-envify@^1.1.0, loose-envify@^1.4.0:
+loose-envify@^1.1.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/loose-envify/-/loose-envify-1.4.0.tgz#71ee51fa7be4caec1a63839f7e682d8132d30caf"
   integrity sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==
@@ -4749,15 +4744,6 @@ process-nextick-args@~2.0.0:
   resolved "https://registry.yarnpkg.com/process-nextick-args/-/process-nextick-args-2.0.1.tgz#7820d9b16120cc55ca9ae7792680ae7dba6d7fe2"
   integrity sha512-3ouUOpQhtgrbOa17J7+uxOTpITYWaGP7/AhoR3+A+/1e9skrzelGi/dXzEYyvbxubEF6Wn2ypscTKiKJFFn1ag==
 
-prop-types@^15.7.2:
-  version "15.7.2"
-  resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
-  integrity sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ==
-  dependencies:
-    loose-envify "^1.4.0"
-    object-assign "^4.1.1"
-    react-is "^16.8.1"
-
 property-information@^6.0.0:
   version "6.1.1"
   resolved "https://registry.yarnpkg.com/property-information/-/property-information-6.1.1.tgz#5ca85510a3019726cb9afed4197b7b8ac5926a22"
@@ -4814,15 +4800,10 @@ react-dom@^17.0.1:
     object-assign "^4.1.1"
     scheduler "^0.20.2"
 
-react-is@^16.8.1:
-  version "16.13.1"
-  resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
-  integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
-
-react-on-rails@13.0.0:
-  version "13.0.0"
-  resolved "https://registry.yarnpkg.com/react-on-rails/-/react-on-rails-13.0.0.tgz#422da089d896ac03d7077e8fa00dc177e415b154"
-  integrity sha512-MWXxNbD+yLpUoF+Sgg+glJ00GmEntuccOhIoprNcTpRTPA2piBTeGfBIn0D7U7ZDF/FRDZMLIpnmEU4cTeHghg==
+react-on-rails@^13.0.0:
+  version "13.0.2"
+  resolved "https://registry.yarnpkg.com/react-on-rails/-/react-on-rails-13.0.2.tgz#6fdb38b0cbd9e7c8792df1c9e655a90420f15ce5"
+  integrity sha512-FPgpw5/klHXxonOUe2Slp1Enq2qrzI2SGW9MfBvoFFo9yf/Bu6NXIm75Pbeu58fM2kfzgRl23UsWnvEfk+UuUw==
   dependencies:
     "@babel/runtime-corejs3" "^7.12.5"
     concurrently "^5.1.0"
@@ -5246,10 +5227,10 @@ setprototypeof@1.2.0:
   resolved "https://registry.yarnpkg.com/setprototypeof/-/setprototypeof-1.2.0.tgz#66c9a24a73f9fc28cbe66b09fed3d33dcaf1b424"
   integrity sha512-E5LDX7Wrp85Kil5bhZv46j8jOeboKq5JMmYM3gVGdGH8xFpPWXUMsNrlODCrkoxMEeNi/XZIwuRvY4XNwYMJpw==
 
-shakapacker@6.4.0:
-  version "6.4.0"
-  resolved "https://registry.yarnpkg.com/shakapacker/-/shakapacker-6.4.0.tgz#f49ad8bb51eb1a151b190b588ad467c6e6f62e69"
-  integrity sha512-bxxi7Lla3n2fnFjxVv6BtD2vcTEZIm2eb29WkJqZBmpFVT9tnwbd3XQISD9eOst6kTEJu2ruUp7dGvuEjpxwkg==
+shakapacker@^6.4.0:
+  version "6.4.1"
+  resolved "https://registry.yarnpkg.com/shakapacker/-/shakapacker-6.4.1.tgz#4c3662c63acf54ecd7847f97ceb88ee1a23bfa2a"
+  integrity sha512-yCGqDVNP5Dz4W8wAl53M/zG6/xpvAaFItPVVlDuHyq3xCzHD2MYEBvmITNgBvvl2WU34OPcEIeVrXOWcl/MCMQ==
   dependencies:
     glob "^7.2.0"
     js-yaml "^4.1.0"
