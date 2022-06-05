@@ -25,8 +25,8 @@ See the [commit history](https://github.com/shakacode/react_on_rails_tutorial_wi
 
 ```bash
 git clone git@github.com:shakacode/react_on_rails_demo_ssr_hmr.git
-bundle
-yarn
+bundle install
+yarn install
 ```
 
 Use the provided Procfiles to run webpack and rails together, like `overmind start -f Procfile.dev`
