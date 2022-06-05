@@ -4,6 +4,7 @@ import type { FunctionComponent } from 'react'
 
 import HelloWorldMdx from './HelloWorld.mdx'
 import style from './HelloWorld.module.css'
+import logo from './logo.svg'
 
 export interface Props {
   readonly name: string
@@ -25,7 +26,8 @@ const HelloWorld: FunctionComponent<Props> = (props: Props) => {
   }, [])
 
   return (
-    <div>
+    <>
+      <img src={logo} className={style.logo} alt="logo" />
       <HelloWorldMdx name={name} />
       <hr />
       <form>
@@ -39,7 +41,7 @@ const HelloWorld: FunctionComponent<Props> = (props: Props) => {
           />
         </label>
       </form>
-    </div>
+    </>
   )
 }
 
