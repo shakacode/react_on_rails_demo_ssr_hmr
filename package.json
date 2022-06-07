@@ -38,5 +38,6 @@
     "webpack-dev-server": "^4.9.1",
     "webpack-merge": "^5.8.0",
     "webpack-sources": "^3.2.3"
-  }
+  },
+  "packageManager": "yarn@3.2.1"
 }
