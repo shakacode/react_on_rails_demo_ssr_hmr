@@ -4,11 +4,6 @@
     "yarn": ">=1 <4"
   },
   "dependencies": {
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-on-rails": "^13.0.2"
-  },
-  "devDependencies": {
     "@babel/core": "^7.18.2",
     "@babel/plugin-transform-runtime": "^7.18.2",
     "@babel/preset-env": "^7.18.2",
@@ -16,7 +11,6 @@
     "@babel/preset-typescript": "^7.17.12",
     "@babel/runtime": "^7.18.3",
     "@mdx-js/loader": "^2.1.1",
-    "@pmmmwh/react-refresh-webpack-plugin": "^0.5.7",
     "@types/react": "^16.14.26",
     "@types/react-dom": "^16.9.16",
     "babel-loader": "^8.2.5",
@@ -24,10 +18,11 @@
     "compression-webpack-plugin": "^9.2.0",
     "css-loader": "^5.2.7",
     "css-minimizer-webpack-plugin": "^2.0.0",
-    "fork-ts-checker-webpack-plugin": "^6.5.2",
     "mini-css-extract-plugin": "^1.6.2",
     "pnp-webpack-plugin": "^1.7.0",
-    "react-refresh": "^0.13.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-on-rails": "^13.0.2",
     "shakapacker": "^6.4.1",
     "style-loader": "^3.3.1",
     "terser-webpack-plugin": "^5.3.3",
@@ -35,9 +30,14 @@
     "webpack": "^5.73.0",
     "webpack-assets-manifest": "^5.1.0",
     "webpack-cli": "^4.9.2",
-    "webpack-dev-server": "^4.9.2",
     "webpack-merge": "^5.8.0",
     "webpack-sources": "^3.2.3"
+  },
+  "devDependencies": {
+    "@pmmmwh/react-refresh-webpack-plugin": "^0.5.7",
+    "fork-ts-checker-webpack-plugin": "^6.5.2",
+    "react-refresh": "^0.13.0",
+    "webpack-dev-server": "^4.9.2"
   },
   "packageManager": "yarn@3.2.1"
 }
