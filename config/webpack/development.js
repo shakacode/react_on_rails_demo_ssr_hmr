@@ -19,14 +19,5 @@ const developmentEnvOnly = (clientWebpackConfig, serverWebpackConfig) => {
       })
     )
   }
-
-  clientWebpackConfig.plugins.push(
-    new ForkTsCheckerWebpackPlugin({
-      typescript: {
-        configFile: path.resolve(__dirname, '../../tsconfig.json')
-      },
-      async: false
-    })
-  )
 }
 module.exports = webpackConfig(developmentEnvOnly)
