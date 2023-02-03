@@ -95,13 +95,16 @@ GEM
     marcel (1.0.2)
     method_source (1.0.0)
     mini_mime (1.1.2)
-    mini_portile2 (2.6.1)
     minitest (5.14.4)
     msgpack (1.4.2)
+    net-protocol (0.2.1)
+      timeout
+    net-smtp (0.3.3)
+      net-protocol
     nio4r (2.5.8)
-    nokogiri (1.12.5)
-      mini_portile2 (~> 2.6.1)
+    nokogiri (1.14.1-x86_64-linux)
       racc (~> 1.4)
+    psych (3.3.4)
     public_suffix (4.0.6)
     puma (4.3.8)
       nio4r (~> 2.0)
@@ -173,6 +176,7 @@ GEM
     sqlite3 (1.4.2)
     thor (1.1.0)
     thread_safe (0.3.6)
+    timeout (0.3.1)
     tzinfo (1.2.9)
       thread_safe (~> 0.1)
     web-console (4.1.0)
@@ -192,7 +196,7 @@ GEM
     zeitwerk (2.4.2)
 
 PLATFORMS
-  ruby
+  x86_64-linux
 
 DEPENDENCIES
   bootsnap (>= 1.4.2)
@@ -200,6 +204,8 @@ DEPENDENCIES
   capybara (>= 2.15)
   jbuilder (~> 2.7)
   listen (~> 3.2)
+  net-smtp (~> 0.3.3)
+  psych (< 4)
   puma (~> 4.1)
   rails (~> 6.0.3, >= 6.0.3.1)
   react_on_rails (= 13.3.1)
@@ -213,7 +219,7 @@ DEPENDENCIES
   webdrivers
 
 RUBY VERSION
-   ruby 2.7.5p203
+   ruby 3.1.2p20
 
 BUNDLED WITH
    2.3.26
