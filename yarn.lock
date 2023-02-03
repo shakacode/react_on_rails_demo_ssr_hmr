@@ -7067,9 +7067,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-on-rails@npm:^13.0.2":
-  version: 13.0.2
-  resolution: "react-on-rails@npm:13.0.2"
+"react-on-rails@npm:13.3.1":
+  version: 13.3.1
+  resolution: "react-on-rails@npm:13.3.1"
   dependencies:
     "@babel/runtime-corejs3": ^7.12.5
     concurrently: ^5.1.0
@@ -7077,7 +7077,7 @@ __metadata:
     js-yaml: ">= 3.0.0"
     react: ">= 16"
     react-dom: ">= 16"
-  checksum: fff0112250c75e885bb9878d47033e47968acd96bca5a6f1d29a4c6bed88471dcf841846e3819ac5fcda638b549c4901d99e29a40817827c2b80099cc2a14d1e
+  checksum: 08c367447bd526163fc52aa06af4d2521da5651c442b028ae6c49f14bf45e542ccaf530b4e671647450ffdbe54da87730520fab21cddde186cd87061397bedc7
   languageName: node
   linkType: hard
 
@@ -7451,9 +7451,9 @@ __metadata:
     pnp-webpack-plugin: ^1.7.0
     react: ^17.0.2
     react-dom: ^17.0.2
-    react-on-rails: ^13.0.2
+    react-on-rails: 13.3.1
     react-refresh: ^0.13.0
-    shakapacker: ^6.4.1
+    shakapacker: 6.5.5
     style-loader: ^3.3.1
     terser-webpack-plugin: ^5.3.3
     typescript: ^4.7.3
@@ -7712,9 +7712,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"shakapacker@npm:^6.4.1":
-  version: 6.4.1
-  resolution: "shakapacker@npm:6.4.1"
+"shakapacker@npm:6.5.5":
+  version: 6.5.5
+  resolution: "shakapacker@npm:6.5.5"
   dependencies:
     glob: ^7.2.0
     js-yaml: ^4.1.0
@@ -7724,15 +7724,15 @@ __metadata:
     "@babel/plugin-transform-runtime": ^7.17.0
     "@babel/preset-env": ^7.16.11
     "@babel/runtime": ^7.17.9
-    babel-loader: ^8.2.4
+    babel-loader: ^8.2.4 || ^9.0.0
     compression-webpack-plugin: ^9.0.0 || ^10.0.0
     terser-webpack-plugin: ^5.3.1
     webpack: ^5.72.0
     webpack-assets-manifest: ^5.0.6
-    webpack-cli: ^4.9.2
+    webpack-cli: ^4.9.2 || ^5.0.0
     webpack-dev-server: ^4.9.0
     webpack-merge: ^5.8.0
-  checksum: 174e334a10fcb59923febf6efe8c82a2572d8fbda00030096b4ab9c44d24a50a5e39eb8fc7ee8f4d5947db336756efd83bf5581f8ab778e671e203f31b8553d4
+  checksum: 47029188adecbeceb2a55dc80a536b04d0721f5e181235e86d1d4753ad82943a29bbecdf0ccbfda53390dbfef7fe96909fd55b1424b4efac96caa4fc9aa70fc4
   languageName: node
   linkType: hard
 
