@@ -7206,9 +7206,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-on-rails@npm:13.3.1":
-  version: 13.3.1
-  resolution: "react-on-rails@npm:13.3.1"
+"react-on-rails@npm:13.3.2":
+  version: 13.3.2
+  resolution: "react-on-rails@npm:13.3.2"
   dependencies:
     "@babel/runtime-corejs3": ^7.12.5
     concurrently: ^5.1.0
@@ -7216,7 +7216,7 @@ __metadata:
     js-yaml: ">= 3.0.0"
     react: ">= 16"
     react-dom: ">= 16"
-  checksum: 08c367447bd526163fc52aa06af4d2521da5651c442b028ae6c49f14bf45e542ccaf530b4e671647450ffdbe54da87730520fab21cddde186cd87061397bedc7
+  checksum: 6717bef2828776a3784a447f9d458a6aa85db014bd4011de994b30df60e06c071e6d3baec58b0008c7b2cc4121fc1d588dba33fa98fb77d8fc291971b0024153
   languageName: node
   linkType: hard
 
@@ -7577,9 +7577,9 @@ __metadata:
     prop-types: ^15.8.1
     react: ^18.2.0
     react-dom: ^18.2.0
-    react-on-rails: 13.3.1
+    react-on-rails: 13.3.2
     react-refresh: ^0.14.0
-    shakapacker: 6.5.5
+    shakapacker: 6.5.6
     style-loader: ^3.3.1
     terser-webpack-plugin: ^5.3.3
     typescript: ^4.7.3
@@ -7828,9 +7828,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"shakapacker@npm:6.5.5":
-  version: 6.5.5
-  resolution: "shakapacker@npm:6.5.5"
+"shakapacker@npm:6.5.6":
+  version: 6.5.6
+  resolution: "shakapacker@npm:6.5.6"
   dependencies:
     glob: ^7.2.0
     js-yaml: ^4.1.0
@@ -7848,7 +7848,7 @@ __metadata:
     webpack-cli: ^4.9.2 || ^5.0.0
     webpack-dev-server: ^4.9.0
     webpack-merge: ^5.8.0
-  checksum: 47029188adecbeceb2a55dc80a536b04d0721f5e181235e86d1d4753ad82943a29bbecdf0ccbfda53390dbfef7fe96909fd55b1424b4efac96caa4fc9aa70fc4
+  checksum: e4bc5a344d107f6a75920cbb82539c1d10c2122bc2ea4d674b16751218c7acbb8f61655128e0ff5924cd23638b78bdc715905574bb5baf93d408baf7609a3066
   languageName: node
   linkType: hard
 
