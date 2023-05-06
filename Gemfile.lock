@@ -74,6 +74,7 @@ GEM
     childprocess (3.0.0)
     concurrent-ruby (1.2.0)
     connection_pool (2.3.0)
+    connection_pool (2.4.0)
     crass (1.0.6)
     date (3.3.3)
     erubi (1.12.0)
@@ -154,7 +155,7 @@ GEM
     rb-fsevent (0.11.0)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
-    react_on_rails (13.3.2)
+    react_on_rails (13.3.3)
       addressable
       connection_pool
       execjs (~> 2.5)
@@ -166,7 +167,7 @@ GEM
       childprocess (>= 0.5, < 4.0)
       rubyzip (>= 1.2.2)
     semantic_range (3.0.0)
-    shakapacker (6.6.0)
+    shakapacker (7.0.0.rc.0)
       activesupport (>= 5.2)
       rack-proxy (>= 0.6.1)
       railties (>= 5.2)
@@ -217,9 +218,9 @@ DEPENDENCIES
   psych (< 4)
   puma (~> 4.1)
   rails (~> 6.0.3, >= 6.0.3.1)
-  react_on_rails (= 13.3.2)
+  react_on_rails (= 13.3.3)
   selenium-webdriver
-  shakapacker (= 6.6.0)
+  shakapacker (= 7.0.0.rc.0)
   spring
   spring-watcher-listen (~> 2.0.0)
   sqlite3 (~> 1.4)
