@@ -1,27 +1,23 @@
-// The source code including full typescript support is available at: 
-// https://github.com/shakacode/react_on_rails_demo_ssr_hmr/blob/master/config/webpack/development.js
+const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin')
+const path = require('path')
+const { devServer, inliningCss } = require('shakapacker')
 
-const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
-const path = require('path');
-const { devServer, inliningCss } = require('shakapacker');
+const webpackConfig = require('./ServerClientOrBoth')
 
-const webpackConfig = require('./ServerClientOrBoth');
+const developmentEnvOnly = (clientWebpackConfig, serverWebpackConfig) => {
 
-const developmentEnvOnly = (clientWebpackConfig, _serverWebpackConfig) => {
-  // plugins
-  if (inliningCss) {
+  //plugins
+  if (inliningCss ) {
     // Note, when this is run, we're building the server and client bundles in separate processes.
-    // Thus, this plugin is not applied to the server bundle.
-
-    // eslint-disable-next-line global-require
-    const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin');
+    // Thus, this plugin is not applied.
+    const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin')
     clientWebpackConfig.plugins.push(
       new ReactRefreshWebpackPlugin({
-        overlay: {
-          sockPort: devServer.port,
-        },
-      }),
-    );
+        overlay:{
+          sockPort: devServer.port
+        }
+      })
+    )
   }
 
   clientWebpackConfig.plugins.push(
@@ -32,6 +28,5 @@ const developmentEnvOnly = (clientWebpackConfig, _serverWebpackConfig) => {
       async: false
     })
   )
-};
-
-module.exports = webpackConfig(developmentEnvOnly);
+}
+module.exports = webpackConfig(developmentEnvOnly)

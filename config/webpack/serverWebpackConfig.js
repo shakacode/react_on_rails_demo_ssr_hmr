@@ -1,30 +1,25 @@
-// The source code including full typescript support is available at: 
-// https://github.com/shakacode/react_on_rails_demo_ssr_hmr/blob/master/config/webpack/serverWebpackConfig.js
+const { merge, config } = require('shakapacker')
+const commonWebpackConfig = require('./commonWebpackConfig')
 
-const { merge, config } = require('shakapacker');
-const commonWebpackConfig = require('./commonWebpackConfig');
-
-const webpack = require('webpack');
+const webpack = require('webpack')
 
 const configureServer = () => {
   // We need to use "merge" because the clientConfigObject, EVEN after running
   // toWebpackConfig() is a mutable GLOBAL. Thus any changes, like modifying the
   // entry value will result in changing the client config!
   // Using webpack-merge into an empty object avoids this issue.
-  const serverWebpackConfig = commonWebpackConfig();
+  const serverWebpackConfig = commonWebpackConfig()
 
   // We just want the single server bundle entry
   const serverEntry = {
-    'server-bundle': serverWebpackConfig.entry['server-bundle'],
-  };
-
-  if (!serverEntry['server-bundle']) {
-    throw new Error(
-      "Create a pack with the file name 'server-bundle.js' containing all the server rendering files",
-    );
+    'server-bundle': serverWebpackConfig.entry['server-bundle']
   }
 
-  serverWebpackConfig.entry = serverEntry;
+  if (!serverEntry['server-bundle']) {
+    throw new Error('Create a pack with the file name \'server-bundle.js\' containing all the server rendering files')
+  }
+
+  serverWebpackConfig.entry = serverEntry
 
   // Remove the mini-css-extract-plugin from the style loaders because
   // the client build will handle exporting CSS.
@@ -32,16 +27,19 @@ const configureServer = () => {
   serverWebpackConfig.module.rules.forEach((loader) => {
     if (loader.use && loader.use.filter) {
       loader.use = loader.use.filter(
-        (item) => !(typeof item === 'string' && item.match(/mini-css-extract-plugin/)),
-      );
+        (item) =>
+          !(typeof item === 'string' && item.match(/mini-css-extract-plugin/))
+      )
     }
-  });
+  })
 
   // No splitting of chunks for a server bundle
   serverWebpackConfig.optimization = {
-    minimize: false,
-  };
-  serverWebpackConfig.plugins.unshift(new webpack.optimize.LimitChunkCountPlugin({ maxChunks: 1 }));
+    minimize: false
+  }
+  serverWebpackConfig.plugins.unshift(
+    new webpack.optimize.LimitChunkCountPlugin({ maxChunks: 1 })
+  )
 
   // Custom output for the server-bundle that matches the config in
   // config/initializers/react_on_rails.rb
@@ -53,7 +51,7 @@ const configureServer = () => {
     path: config.outputPath,
     publicPath: config.publicPath,
     // https://webpack.js.org/configuration/output/#outputglobalobject
-  };
+  }
 
   // Don't hash the server bundle b/c would conflict with the client manifest
   // And no need for the MiniCssExtractPlugin
@@ -61,8 +59,8 @@ const configureServer = () => {
     (plugin) =>
       plugin.constructor.name !== 'WebpackAssetsManifest' &&
       plugin.constructor.name !== 'MiniCssExtractPlugin' &&
-      plugin.constructor.name !== 'ForkTsCheckerWebpackPlugin',
-  );
+      plugin.constructor.name !== 'ForkTsCheckerWebpackPlugin'
+  )
 
   // Configure loader rules for SSR
   // Remove the mini-css-extract-plugin from the style loaders because
@@ -105,14 +103,14 @@ const configureServer = () => {
   // eval works well for the SSR bundle because it's the fastest and shows
   // lines in the server bundle which is good for debugging SSR
   // The default of cheap-module-source-map is slow and provides poor info.
-  serverWebpackConfig.devtool = 'eval';
+  serverWebpackConfig.devtool = 'eval'
 
   // If using the default 'web', then libraries like Emotion and loadable-components
   // break with SSR. The fix is to use a node renderer and change the target.
   // If using the React on Rails Pro node server renderer, uncomment the next line
   // serverWebpackConfig.target = 'node'
 
-  return serverWebpackConfig;
-};
+  return serverWebpackConfig
+}
 
-module.exports = configureServer;
+module.exports = configureServer
