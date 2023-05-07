@@ -82,7 +82,7 @@ GEM
       xpath (~> 3.2)
     childprocess (3.0.0)
     concurrent-ruby (1.1.9)
-    connection_pool (2.2.5)
+    connection_pool (2.4.0)
     crass (1.0.6)
     erubi (1.10.0)
     execjs (2.8.1)
@@ -154,7 +154,7 @@ GEM
     rb-fsevent (0.11.0)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
-    react_on_rails (13.0.0)
+    react_on_rails (13.3.3)
       addressable
       connection_pool
       execjs (~> 2.5)
@@ -210,7 +210,7 @@ DEPENDENCIES
   mini_racer
   puma (~> 4.1)
   rails (~> 6.0.3, >= 6.0.3.1)
-  react_on_rails (= 13.0.0)
+  react_on_rails (= 13.3.3)
   selenium-webdriver
   shakapacker!
   spring
