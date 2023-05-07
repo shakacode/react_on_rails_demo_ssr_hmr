@@ -7579,7 +7579,7 @@ __metadata:
     react-dom: ^18.2.0
     react-on-rails: 13.3.2
     react-refresh: ^0.14.0
-    shakapacker: 6.5.6
+    shakapacker: 6.6.0
     style-loader: ^3.3.1
     terser-webpack-plugin: ^5.3.3
     typescript: ^4.7.3
@@ -7828,9 +7828,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"shakapacker@npm:6.5.6":
-  version: 6.5.6
-  resolution: "shakapacker@npm:6.5.6"
+"shakapacker@npm:6.6.0":
+  version: 6.6.0
+  resolution: "shakapacker@npm:6.6.0"
   dependencies:
     glob: ^7.2.0
     js-yaml: ^4.1.0
@@ -7848,7 +7848,7 @@ __metadata:
     webpack-cli: ^4.9.2 || ^5.0.0
     webpack-dev-server: ^4.9.0
     webpack-merge: ^5.8.0
-  checksum: e4bc5a344d107f6a75920cbb82539c1d10c2122bc2ea4d674b16751218c7acbb8f61655128e0ff5924cd23638b78bdc715905574bb5baf93d408baf7609a3066
+  checksum: daf7448b5ab804f47e57c5bad9a28a737bf9e7aa5e4121c72a5f52f721cc78850c73de7280be9d5157641b953fd25829c8c9283c4fd4c1a9ba5f369ffbfc71df
   languageName: node
   linkType: hard
 

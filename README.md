@@ -2,7 +2,7 @@
 
 Each commit demonstrates a step in the [React on Rails Tutorial](https://github.com/shakacode/react_on_rails/blob/master/docs/guides/tutorial.md).
 
-**UPDATE February 28, 2023: This repo is updated to the latest [shakapacker gem and package](https://github.com/shakacode/shakapacker) v6.5.6 and [React on Rails](https://github.com/shakacode/react_on_rails) v13.3.2 releases!**
+**UPDATE May 7, 2023: This repo is updated to the latest [shakapacker gem and package](https://github.com/shakacode/shakapacker) v6.6.0 and [React on Rails](https://github.com/shakacode/react_on_rails) v13.3.2 releases!**
 
 ---
 
