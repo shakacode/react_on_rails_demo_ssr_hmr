@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.7.5'
+ruby '3.1.2'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.3', '>= 6.0.3.1'
@@ -47,7 +47,11 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-gem "shakapacker", "6.4.1"
-gem "react_on_rails", "13.0.0"
+gem "shakapacker", "= 6.6.0"
+gem "react_on_rails", "= 13.3.2"
 
-gem 'mini_racer', platforms: :ruby
+gem "net-smtp", "~> 0.3.3"
+
+# Psych 4+ comes with breakibg changes in Ruby 3.1.0. Though the issue are
+# addressed in Rails 7. So remove this the next line in Rails 7.
+gem 'psych', '< 4'

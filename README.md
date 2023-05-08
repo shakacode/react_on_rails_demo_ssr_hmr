@@ -2,7 +2,7 @@
 
 Each commit demonstrates a step in the [React on Rails Tutorial](https://github.com/shakacode/react_on_rails/blob/master/docs/guides/tutorial.md).
 
-**UPDATE June 4, 2022: This repo is updated to the latest [shakapacker gem and package](https://github.com/shakacode/shakapacker) v6.4 release and React on Rails v13!**
+**UPDATE May 7, 2023: This repo is updated to the latest [shakapacker gem and package](https://github.com/shakacode/shakapacker) v6.6.0 and [React on Rails](https://github.com/shakacode/react_on_rails) v13.3.2 releases!**
 
 ---
 
@@ -36,19 +36,23 @@ Use the provided Procfiles to run webpack and rails together, like `overmind sta
 
 ## Running with HMR
 
-```
+```sh
+bin/dev
+# or
 overmind start -f Procfile.dev
 ```
 
 ## Running without HMR, statically creating the bundles
 
-```
+```sh
+bin/dev-static
+# or
 overmind start -f Procfile.dev-static
 ```
 
 ## Testing Functionality of SSR and HMR
 
-1. Start app using either `Procfile.dev` or `Procfile.dev-static`.
+1. Start app using either `bin/dev` or `bin/dev-static` (or run `Procfile.dev` or `Procfile.dev-static` with your favorit process manager like overmind or foreman).
 1. Visit page http://localhost:3000/hello_world.
    1. Inspect the page for no errors and view the console. With HMR (non-static), you'll see a browser console message:`[webpack-dev-server] Hot Module Replacement enabled.`
    2. Type into the input box and notice the label above change.
