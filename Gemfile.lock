@@ -74,7 +74,6 @@ GEM
     childprocess (3.0.0)
     concurrent-ruby (1.2.0)
     connection_pool (2.3.0)
-    connection_pool (2.4.0)
     crass (1.0.6)
     date (3.3.3)
     erubi (1.12.0)
@@ -100,6 +99,7 @@ GEM
     marcel (1.0.2)
     method_source (1.0.0)
     mini_mime (1.1.2)
+    mini_portile2 (2.8.2)
     minitest (5.17.0)
     msgpack (1.4.2)
     net-imap (0.3.4)
@@ -112,6 +112,9 @@ GEM
     net-smtp (0.3.3)
       net-protocol
     nio4r (2.5.8)
+    nokogiri (1.14.1)
+      mini_portile2 (~> 2.8.0)
+      racc (~> 1.4)
     nokogiri (1.14.1-x86_64-linux)
       racc (~> 1.4)
     psych (3.3.4)
@@ -206,6 +209,7 @@ GEM
     zeitwerk (2.6.6)
 
 PLATFORMS
+  ruby
   x86_64-linux
 
 DEPENDENCIES

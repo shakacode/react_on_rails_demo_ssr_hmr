@@ -2078,34 +2078,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-dom@npm:^16.9.19":
-  version: 16.9.19
-  resolution: "@types/react-dom@npm:16.9.19"
+"@types/react-dom@npm:^18.2.4":
+  version: 18.2.4
+  resolution: "@types/react-dom@npm:18.2.4"
   dependencies:
-    "@types/react": ^16
-  checksum: c696f137aba09be0ea87ad6e99a083607b4fc574857d92c264cc6518ee929ef7e94855362436c2ef5fefb70ebfc9b7413634bb3a2f3a8c2b7522521faaac7d62
+    "@types/react": "*"
+  checksum: 8301f35cf1cbfec8c723e9477aecf87774e3c168bd457d353b23c45064737213d3e8008b067c6767b7b08e4f2b3823ee239242a6c225fc91e7f8725ef8734124
   languageName: node
   linkType: hard
 
-"@types/react@npm:^16":
-  version: 16.14.16
-  resolution: "@types/react@npm:16.14.16"
+"@types/react@npm:*, @types/react@npm:^18.2.6":
+  version: 18.2.6
+  resolution: "@types/react@npm:18.2.6"
   dependencies:
     "@types/prop-types": "*"
     "@types/scheduler": "*"
     csstype: ^3.0.2
-  checksum: 877eec91483d00256a0b783e823bc2cf0683ddbbe221d12795528a23267ef0cbabb968e76b74ea6e1d0cc5112263fc166c0ebe508fff43001caaa900f8b4722d
-  languageName: node
-  linkType: hard
-
-"@types/react@npm:^16.14.41":
-  version: 16.14.41
-  resolution: "@types/react@npm:16.14.41"
-  dependencies:
-    "@types/prop-types": "*"
-    "@types/scheduler": "*"
-    csstype: ^3.0.2
-  checksum: 48b721b41af4b4b6fa0433ddca27aee72bd8969e95c7bcb1fd2e9fda81e0a602dea5f855072f1458996d3e45ceeae0751d7d1f6687e6dd1698a6fc5c67cc7b82
+  checksum: dea9d232d8df7ac357367a69dcb557711ab3d5501807ffa77cebeee73d49ee94d095f298e36853c63ed47cce097eee4c7eae2aaa8c02fac3f0171ec1b523a819
   languageName: node
   linkType: hard
 
@@ -2354,16 +2343,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@webpack-cli/serve@npm:^2.0.3":
-  version: 2.0.3
-  resolution: "@webpack-cli/serve@npm:2.0.3"
+"@webpack-cli/serve@npm:^2.0.4":
+  version: 2.0.4
+  resolution: "@webpack-cli/serve@npm:2.0.4"
   peerDependencies:
     webpack: 5.x.x
     webpack-cli: 5.x.x
   peerDependenciesMeta:
     webpack-dev-server:
       optional: true
-  checksum: 1a133d8222d9a3b286cbc670a920af1a2ee66f136b61cb1448767bc481cdc3db65f06eae132a7093b4059ad7aa9a1a5b4810099f8698402843e7c39796804dd0
+  checksum: 561ea2e6eb551415f0b1675393a8480e1201293fe37eae334cbb1fdc466986668cca76ca1ca327ada9b498eae27cbecef0793e3bb5677288f1a5216cad414efe
   languageName: node
   linkType: hard
 
@@ -6221,13 +6210,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"object-assign@npm:^4.1.1":
-  version: 4.1.1
-  resolution: "object-assign@npm:4.1.1"
-  checksum: fcc6e4ea8c7fe48abfbb552578b1c53e0d194086e2e6bbbf59e0a536381a292f39943c6e9628af05b5528aa5e3318bb30d6b2e53cadaf5b8fe9e12c4b69af23f
-  languageName: node
-  linkType: hard
-
 "object-inspect@npm:^1.9.0":
   version: 1.12.2
   resolution: "object-inspect@npm:1.12.2"
@@ -6995,16 +6977,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-dom@npm:^17.0.2":
-  version: 17.0.2
-  resolution: "react-dom@npm:17.0.2"
+"react-dom@npm:^18.2.0":
+  version: 18.2.0
+  resolution: "react-dom@npm:18.2.0"
   dependencies:
     loose-envify: ^1.1.0
-    object-assign: ^4.1.1
-    scheduler: ^0.20.2
+    scheduler: ^0.23.0
   peerDependencies:
-    react: 17.0.2
-  checksum: 1c1eaa3bca7c7228d24b70932e3d7c99e70d1d04e13bb0843bbf321582bc25d7961d6b8a6978a58a598af2af496d1cedcfb1bf65f6b0960a0a8161cb8dab743c
+    react: ^18.2.0
+  checksum: 7d323310bea3a91be2965f9468d552f201b1c27891e45ddc2d6b8f717680c95a75ae0bc1e3f5cf41472446a2589a75aed4483aee8169287909fcd59ad149e8cc
   languageName: node
   linkType: hard
 
@@ -7022,20 +7003,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-refresh@npm:^0.13.0":
-  version: 0.13.0
-  resolution: "react-refresh@npm:0.13.0"
-  checksum: 1cf2b87ed99e1d388aa3923078bc30cd3ce43ee86e8936944e961d3643c6e85da41ebed6a0996e8bdad75a0d2ce3b7e10638b45018231380d4a174f63a451f75
+"react-refresh@npm:^0.14.0":
+  version: 0.14.0
+  resolution: "react-refresh@npm:0.14.0"
+  checksum: dc69fa8c993df512f42dd0f1b604978ae89bd747c0ed5ec595c0cc50d535fb2696619ccd98ae28775cc01d0a7c146a532f0f7fb81dc22e1977c242a4912312f4
   languageName: node
   linkType: hard
 
-"react@npm:^17.0.2":
-  version: 17.0.2
-  resolution: "react@npm:17.0.2"
+"react@npm:^18.2.0":
+  version: 18.2.0
+  resolution: "react@npm:18.2.0"
   dependencies:
     loose-envify: ^1.1.0
-    object-assign: ^4.1.1
-  checksum: b254cc17ce3011788330f7bbf383ab653c6848902d7936a87b09d835d091e3f295f7e9dd1597c6daac5dc80f90e778c8230218ba8ad599f74adcc11e33b9d61b
+  checksum: 88e38092da8839b830cda6feef2e8505dec8ace60579e46aa5490fc3dc9bba0bd50336507dc166f43e3afc1c42939c09fe33b25fae889d6f402721dcd78fca1b
   languageName: node
   linkType: hard
 
@@ -7392,8 +7372,8 @@ __metadata:
     "@babel/runtime": ^7.21.5
     "@mdx-js/loader": ^2.3.0
     "@pmmmwh/react-refresh-webpack-plugin": ^0.5.10
-    "@types/react": ^16.14.41
-    "@types/react-dom": ^16.9.19
+    "@types/react": ^18.2.6
+    "@types/react-dom": ^18.2.4
     babel-loader: ^9.1.2
     babel-plugin-macros: ^3.1.0
     compression-webpack-plugin: ^10.0.0
@@ -7402,18 +7382,18 @@ __metadata:
     fork-ts-checker-webpack-plugin: ^8.0.0
     mini-css-extract-plugin: ^2.7.5
     pnp-webpack-plugin: ^1.7.0
-    react: ^17.0.2
-    react-dom: ^17.0.2
+    react: ^18.2.0
+    react-dom: ^18.2.0
     react-on-rails: 13.3.3
-    react-refresh: ^0.13.0
+    react-refresh: ^0.14.0
     shakapacker: 7.0.0-rc.0
     style-loader: ^3.3.2
     terser-webpack-plugin: ^5.3.8
     typescript: ^5.0.4
     webpack: ^5.82.0
     webpack-assets-manifest: ^5.1.0
-    webpack-cli: ^5.1.0
-    webpack-dev-server: ^4.14.0
+    webpack-cli: ^5.1.1
+    webpack-dev-server: ^4.15.0
     webpack-merge: ^5.8.0
     webpack-sources: ^3.2.3
   languageName: unknown
@@ -7458,13 +7438,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"scheduler@npm:^0.20.2":
-  version: 0.20.2
-  resolution: "scheduler@npm:0.20.2"
+"scheduler@npm:^0.23.0":
+  version: 0.23.0
+  resolution: "scheduler@npm:0.23.0"
   dependencies:
     loose-envify: ^1.1.0
-    object-assign: ^4.1.1
-  checksum: c4b35cf967c8f0d3e65753252d0f260271f81a81e427241295c5a7b783abf4ea9e905f22f815ab66676f5313be0a25f47be582254db8f9241b259213e999b8fc
+  checksum: d79192eeaa12abef860c195ea45d37cbf2bbf5f66e3c4dcd16f54a7da53b17788a70d109ee3d3dde1a0fd50e6a8fc171f4300356c5aee4fc0171de526bf35f8a
   languageName: node
   linkType: hard
 
@@ -8561,14 +8540,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"webpack-cli@npm:^5.1.0":
-  version: 5.1.0
-  resolution: "webpack-cli@npm:5.1.0"
+"webpack-cli@npm:^5.1.1":
+  version: 5.1.1
+  resolution: "webpack-cli@npm:5.1.1"
   dependencies:
     "@discoveryjs/json-ext": ^0.5.0
     "@webpack-cli/configtest": ^2.1.0
     "@webpack-cli/info": ^2.0.1
-    "@webpack-cli/serve": ^2.0.3
+    "@webpack-cli/serve": ^2.0.4
     colorette: ^2.0.14
     commander: ^10.0.1
     cross-spawn: ^7.0.3
@@ -8589,7 +8568,7 @@ __metadata:
       optional: true
   bin:
     webpack-cli: bin/cli.js
-  checksum: 73749b9e27e16007011266dcd7b935168cc61cd4e346e4c09a697be066a310b822c1f386ba4a87417851eedd6df5812389918be68e275542c8a18e05ca1a719c
+  checksum: 7738e6a84a0098886e1e0c0fd0dab44b7dedfbb0580afbb5ef734c5109dcaee80140bebb5d9f4b40f425029563bb09bcbda8b08d904fa14e60ff632e6dcc8a17
   languageName: node
   linkType: hard
 
@@ -8608,9 +8587,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"webpack-dev-server@npm:^4.14.0":
-  version: 4.14.0
-  resolution: "webpack-dev-server@npm:4.14.0"
+"webpack-dev-server@npm:^4.15.0":
+  version: 4.15.0
+  resolution: "webpack-dev-server@npm:4.15.0"
   dependencies:
     "@types/bonjour": ^3.5.9
     "@types/connect-history-api-fallback": ^1.3.5
@@ -8651,7 +8630,7 @@ __metadata:
       optional: true
   bin:
     webpack-dev-server: bin/webpack-dev-server.js
-  checksum: 56905e9e1177431a38a279995ff2d056d0e34cfb99e50b1bde112f0d503d31b54ee8a438e8a3a4b7e74ef4745aba219ddee4a4762f5f691dbada30f742b84c1b
+  checksum: 6fe375089b061be2e4ed6d6a8b20743734d304cd0c34757271c6685f97642b028f253c627f899b629c97c067c294484f906e394fd1c104ee795237b8725f2701
   languageName: node
   linkType: hard
 
