@@ -99,6 +99,7 @@ GEM
     marcel (1.0.2)
     method_source (1.0.0)
     mini_mime (1.1.2)
+    mini_portile2 (2.8.2)
     minitest (5.17.0)
     msgpack (1.4.2)
     net-imap (0.3.4)
@@ -111,6 +112,9 @@ GEM
     net-smtp (0.3.3)
       net-protocol
     nio4r (2.5.8)
+    nokogiri (1.14.1)
+      mini_portile2 (~> 2.8.0)
+      racc (~> 1.4)
     nokogiri (1.14.1-x86_64-linux)
       racc (~> 1.4)
     psych (3.3.4)
@@ -154,7 +158,7 @@ GEM
     rb-fsevent (0.11.0)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
-    react_on_rails (13.3.2)
+    react_on_rails (13.3.3)
       addressable
       connection_pool
       execjs (~> 2.5)
@@ -166,7 +170,7 @@ GEM
       childprocess (>= 0.5, < 4.0)
       rubyzip (>= 1.2.2)
     semantic_range (3.0.0)
-    shakapacker (6.6.0)
+    shakapacker (7.0.0.rc.0)
       activesupport (>= 5.2)
       rack-proxy (>= 0.6.1)
       railties (>= 5.2)
@@ -205,6 +209,7 @@ GEM
     zeitwerk (2.6.6)
 
 PLATFORMS
+  ruby
   x86_64-linux
 
 DEPENDENCIES
@@ -217,9 +222,9 @@ DEPENDENCIES
   psych (< 4)
   puma (~> 4.1)
   rails (~> 6.0.3, >= 6.0.3.1)
-  react_on_rails (= 13.3.2)
+  react_on_rails (= 13.3.3)
   selenium-webdriver
-  shakapacker (= 6.6.0)
+  shakapacker (= 7.0.0.rc.0)
   spring
   spring-watcher-listen (~> 2.0.0)
   sqlite3 (~> 1.4)
