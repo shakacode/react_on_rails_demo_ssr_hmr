@@ -1,11 +1,25 @@
 # This file is copied to spec/ when you run 'rails generate rspec:install'
-require 'spec_helper'
+require_relative 'spec_helper'
 ENV['RAILS_ENV'] ||= 'test'
 require_relative '../config/environment'
 # Prevent database truncation if the environment is production
-abort("The Rails environment is running in production mode!") if Rails.env.production?
+abort('The Rails environment is running in production mode!') if Rails.env.production?
 require 'rspec/rails'
 # Add additional requires below this line. Rails is not loaded until this point!
+
+require 'capybara/rails'
+
+SERVER_BUNDLE_PATH = File.expand_path('../public/packs/server-bundle.js', __dir__)
+
+# Prevent database truncation if the environment is production
+abort('The Rails environment is running in production mode!') if Rails.env.production?
+
+# Capybara.register_driver :selenium_chrome do |app|
+#   options = Selenium::WebDriver::Chrome::Options.new
+#   options.add_argument("--headless")
+#   options.add_argument("--disable-gpu")
+#   Capybara::Selenium::Driver.new(app, browser: :chrome, options: options)
+# end
 
 # Requires supporting ruby files with custom matchers and macros, etc, in
 # spec/support/ and its subdirectories. Files matching `spec/**/*_spec.rb` are
@@ -30,6 +44,10 @@ rescue ActiveRecord::PendingMigrationError => e
   abort e.to_s.strip
 end
 RSpec.configure do |config|
+  # config.before(:each, type: :system, js: true) do
+  #   driven_by :selenium_chrome
+  # end
+
   # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures
   config.fixture_path = "#{::Rails.root}/spec/fixtures"
 
@@ -56,8 +74,68 @@ RSpec.configure do |config|
   # https://rspec.info/features/6-0/rspec-rails
   config.infer_spec_type_from_file_location!
 
+  # Capybara config
+  config.include Capybara::DSL
+  #
+  # selenium_firefox webdriver only works for Travis-CI builds.
+  default_driver = :selenium_chrome_headless
+
+  supported_drivers = %i[selenium_chrome_headless selenium_chrome selenium selenium_headless]
+  driver = ENV['DRIVER'].try(:to_sym).presence || default_driver
+  Capybara.javascript_driver = driver
+  Capybara.default_driver = driver
+
+  raise "Unsupported driver: #{driver} (supported = #{supported_drivers})" unless supported_drivers.include?(driver)
+
+  Capybara.register_server(Capybara.javascript_driver) do |app, port|
+    require 'rack/handler/puma'
+    Rack::Handler::Puma.run(app, Port: port)
+  end
+
+  config.before(:each, type: :system, js: true) do
+    driven_by driver
+  end
+
+  config.before(:each, type: :system, rack_test: true) do
+    driven_by :rack_test
+  end
+
+  # Capybara.default_max_wait_time = 15
+  puts '================================================================================'
+  puts "Capybara using driver: #{Capybara.javascript_driver}"
+  puts '================================================================================'
+
+  Capybara.save_path = Rails.root.join('tmp', 'capybara')
+  # Capybara::Screenshot.prune_strategy = { keep: 10 }
+
+  # https://github.com/mattheworiordan/capybara-screenshot/issues/243#issuecomment-620423225
+  # config.retry_callback = proc do |ex|
+  #   Capybara.reset_sessions! if ex.metadata[:js]
+  # end
+
   # Filter lines from Rails gems in backtraces.
   config.filter_rails_from_backtrace!
   # arbitrary gems may also be filtered via:
   # config.filter_gems_from_backtrace("gem name")
+
+  # config.include Capybara::DSL
+
+  # selenium_firefox webdriver only works for Travis-CI builds.
+  # default_driver = :selenium_chrome_headless
+
+  # supported_drivers = %i[selenium_chrome_headless selenium_chrome selenium selenium_headless]
+  # driver = ENV["DRIVER"].try(:to_sym).presence || default_driver
+  # Capybara.javascript_driver = driver
+  # Capybara.default_driver = driver
+
+  # raise "Unsupported driver: #{driver} (supported = #{supported_drivers})" unless supported_drivers.include?(driver)
+
+  # Capybara.register_server(Capybara.javascript_driver) do |app, port|
+  #   require "rack/handler/puma"
+  #   Rack::Handler::Puma.run(app, Port: port)
+  # end
+
+  # config.before(:each, type: :feature, js: true) do
+  #   driven_by driver
+  # end
 end
