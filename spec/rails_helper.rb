@@ -9,8 +9,6 @@ require 'rspec/rails'
 
 require 'capybara/rails'
 
-SERVER_BUNDLE_PATH = File.expand_path('../public/packs/server-bundle.js', __dir__)
-
 # Prevent database truncation if the environment is production
 abort('The Rails environment is running in production mode!') if Rails.env.production?
 
