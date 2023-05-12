@@ -12,4 +12,5 @@ jobs:
       - name: Ruby specs
         run: |
           bundle install
+          ./bin/shakapacker
           bundle exec rspec
