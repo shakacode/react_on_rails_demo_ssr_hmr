@@ -1,6 +1,6 @@
 name: Ruby specs
 
-on: [push, pull_request]
+on: [pull_request]
 
 jobs:
   test:
@@ -10,4 +10,6 @@ jobs:
       - uses: actions/checkout@v2
       - uses: ruby/setup-ruby@v1
       - name: Ruby specs
-        run: bundle exec rspec
+        run: |
+          bundle install
+          bundle exec rspec
