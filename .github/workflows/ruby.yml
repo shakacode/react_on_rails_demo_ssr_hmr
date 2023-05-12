@@ -5,18 +5,9 @@ on: [push, pull_request]
 jobs:
   test:
     name: Ruby specs
-    runs-on: ${{ matrix.os }}
-    strategy:
-      matrix:
-        os: [ubuntu-latest]
-        ruby: ['2.7', '3.0', '3.2']
-
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: ${{ matrix.ruby }}
-          bundler-cache: true
-
       - name: Ruby specs
         run: bundle exec rspec
