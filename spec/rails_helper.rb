@@ -14,12 +14,12 @@ SERVER_BUNDLE_PATH = File.expand_path('../public/packs/server-bundle.js', __dir_
 # Prevent database truncation if the environment is production
 abort('The Rails environment is running in production mode!') if Rails.env.production?
 
-# Capybara.register_driver :selenium_chrome do |app|
-#   options = Selenium::WebDriver::Chrome::Options.new
-#   options.add_argument("--headless")
-#   options.add_argument("--disable-gpu")
-#   Capybara::Selenium::Driver.new(app, browser: :chrome, options: options)
-# end
+Capybara.register_driver :selenium_chrome do |app|
+  options = Selenium::WebDriver::Chrome::Options.new
+  options.add_argument("--headless")
+  options.add_argument("--disable-gpu")
+  Capybara::Selenium::Driver.new(app, browser: :chrome, options: options)
+end
 
 # Requires supporting ruby files with custom matchers and macros, etc, in
 # spec/support/ and its subdirectories. Files matching `spec/**/*_spec.rb` are
@@ -101,10 +101,6 @@ RSpec.configure do |config|
   end
 
   # Capybara.default_max_wait_time = 15
-  puts '================================================================================'
-  puts "Capybara using driver: #{Capybara.javascript_driver}"
-  puts '================================================================================'
-
   Capybara.save_path = Rails.root.join('tmp', 'capybara')
   # Capybara::Screenshot.prune_strategy = { keep: 10 }
 
@@ -119,23 +115,4 @@ RSpec.configure do |config|
   # config.filter_gems_from_backtrace("gem name")
 
   # config.include Capybara::DSL
-
-  # selenium_firefox webdriver only works for Travis-CI builds.
-  # default_driver = :selenium_chrome_headless
-
-  # supported_drivers = %i[selenium_chrome_headless selenium_chrome selenium selenium_headless]
-  # driver = ENV["DRIVER"].try(:to_sym).presence || default_driver
-  # Capybara.javascript_driver = driver
-  # Capybara.default_driver = driver
-
-  # raise "Unsupported driver: #{driver} (supported = #{supported_drivers})" unless supported_drivers.include?(driver)
-
-  # Capybara.register_server(Capybara.javascript_driver) do |app, port|
-  #   require "rack/handler/puma"
-  #   Rack::Handler::Puma.run(app, Port: port)
-  # end
-
-  # config.before(:each, type: :feature, js: true) do
-  #   driven_by driver
-  # end
 end
