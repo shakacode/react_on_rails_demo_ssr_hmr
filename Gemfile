@@ -53,9 +53,7 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-gem "shakapacker", "7.0.0.rc.0"
-# gem "shakapacker", github: 'shakacode/shakapacker', branch: 'judahmeek/gatekeeper'
-# gem "shakapacker", path: '../../shakapacker/shakapacker'
+gem "shakapacker", "7.0.0"
 gem "react_on_rails", "13.3.3"
 
 gem "net-smtp", "~> 0.3.3"
