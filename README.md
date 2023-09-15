@@ -50,6 +50,16 @@ bin/dev-static
 overmind start -f Procfile.dev-static
 ```
 
+
+## Running with SWC
+
+This project uses [SWC](https://swc.rs) instead of Babel.
+For more information about this feature,
+introduced in Shakapacker 6.1.1,
+please check out
+[Shakapacker - Using SWC Loader](https://github.com/shakacode/shakapacker/blob/master/docs/using_swc_loader.md)
+documentation.
+
 ## Testing Functionality of SSR and HMR
 
 1. Start app using either `bin/dev` or `bin/dev-static` (or run `Procfile.dev` or `Procfile.dev-static` with your favorit process manager like overmind or foreman).
