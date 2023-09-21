@@ -50,6 +50,17 @@ bin/dev-static
 overmind start -f Procfile.dev-static
 ```
 
+## Running with SWC
+
+Starting from Shakapacker 6.1.1, it is possible to use SWC in projects.
+See
+[tomdracz/swc-config](https://github.com/shakacode/react_on_rails_demo_ssr_hmr/tree/tomdracz/swc-config)
+branch for a demonstration of SWC usage.
+
+Please check out
+[Shakapacker - Using SWC Loader](https://github.com/shakacode/shakapacker/blob/master/docs/using_swc_loader.md)
+documentation for more information about this feature.
+
 ## Testing Functionality of SSR and HMR
 
 1. Start app using either `bin/dev` or `bin/dev-static` (or run `Procfile.dev` or `Procfile.dev-static` with your favorit process manager like overmind or foreman).
