@@ -54,7 +54,7 @@ overmind start -f Procfile.dev-static
 
 Starting from Shakapacker 6.1.1, it is possible to use SWC in projects.
 See
-[tomdracz/swc-config](https://github.com/shakacode/react_on_rails_demo_ssr_hmr/tree/tomdracz/swc-config)
+[demo-branch-swc-loader](https://github.com/shakacode/react_on_rails_demo_ssr_hmr/tree/demo-branch-swc-loader)
 branch for a demonstration of SWC usage.
 
 Please check out
