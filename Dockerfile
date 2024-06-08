@@ -10,6 +10,9 @@ RUN node -v && npm i -g yarn && yarn set version 3.2.1
 # Set the working directory in the container
 WORKDIR /app
 
+# Install foreman to leverage Procfile
+RUN gem install foreman
+
 # Copy node package maps
 COPY .yarnrc.yml package.json yarn.lock /app/
 COPY .yarn/ /app/.yarn/
@@ -31,4 +34,4 @@ EXPOSE 3000
 EXPOSE 3035 
 
 # Run the app when the container launches
-CMD ["bunde", "exec", "rails",  "s", "-b", "0.0.0.0", "-p", "3000"]
+CMD ["foreman", "start", "-f",  "Procfile.dev"]
