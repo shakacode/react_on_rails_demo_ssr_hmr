@@ -1,4 +1,3 @@
-
 FROM ruby:3.1.2
 
 # Install Node.js
