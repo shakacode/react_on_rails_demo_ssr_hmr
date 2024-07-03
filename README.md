@@ -2,7 +2,7 @@
 
 Each commit demonstrates a step in the [React on Rails Tutorial](https://github.com/shakacode/react_on_rails/blob/master/docs/guides/tutorial.md).
 
-**UPDATE May 7, 2023: This repo is updated to the latest [shakapacker gem and package](https://github.com/shakacode/shakapacker) v6.6.0 and [React on Rails](https://github.com/shakacode/react_on_rails) v13.3.2 releases!**
+**UPDATE July 2, 2024: This repo is updated to the latest [shakapacker gem and package](https://github.com/shakacode/shakapacker) v8.0.0 and [React on Rails](https://github.com/shakacode/react_on_rails) v14.0.3 releases!**
 
 ---
 
@@ -12,7 +12,7 @@ See the [commit history](https://github.com/shakacode/react_on_rails_tutorial_wi
 
 ## Key features
 
-1. `shakpacker` v6! (see explanation of the switch at [rails/webpacker](https://github.com/rails/webpacker)).
+1. `shakpacker` v8! (see explanation of the switch at [rails/webpacker](https://github.com/rails/webpacker)).
 1. Server-Side Rendering (SSR) of React using a separate server bundle.
 1. Webpack configuration for the server bundle is based on the rails/webpacker configuration for the client files.
 1. HMR is provided by [react-refresh-webpack-plugin](https://github.com/pmmmwh/react-refresh-webpack-plugin).
