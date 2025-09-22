@@ -23,7 +23,9 @@ const HelloWorld: FunctionComponent<Props> = (props: Props) => {
       'color: green; background-color: lightgreen; font-weight: normal;',
       'Check out our open positions: https://www.shakacode.com/career/',
     );
-  }, [])
+  }, []);
+
+  (window as any).thisIsBad = "...because it breaks server-side rendering!"
 
   return (
     <>
